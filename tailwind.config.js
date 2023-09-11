@@ -11,7 +11,7 @@ module.exports = {
         sans: ['var(--font-noto-sans-jp)'],
       },
       colors: {
-        'hightlight': '#4A3440',
+        'highlight': '#4A3440',
         'highlight2': '#53464D',
         'offwhite': '#F1F1F1',
         'offblack': '#0C0C0C',
