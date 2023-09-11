@@ -12,6 +12,7 @@ module.exports = {
       },
       colors: {
         'hightlight': '#4A3440',
+        'highlight2': '#53464D',
         'offwhite': '#F1F1F1',
         'offblack': '#0C0C0C',
       }
