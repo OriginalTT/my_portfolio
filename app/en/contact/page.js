@@ -24,7 +24,7 @@ const contact = () => {
                 initial={{ scale: 0, x: -500 }}
                 animate={{ scale: 1, x: 0 }}
                 transition={{ type: 'spring', stiffness: 120, bounce: 1, }}
-            >\I'm Here!/</motion.h1>
+            >\連絡ちょ/</motion.h1>
             <motion.form
                 initial={{ x: -500 }}
                 animate={{ x: 0 }}
