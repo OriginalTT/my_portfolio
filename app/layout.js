@@ -14,12 +14,6 @@ const notoSansJP = Noto_Sans_JP({
   variable: '--font-noto-sans-jp',
 })
 
-export const metadata = {
-  title: 'Tentaro Kubo | Portfolio',
-  description: 'Tentaro Kubo is a software developer, UX designer, and graphic \
-  designer. He was born and raised in Japan, but now he lives in Canada.',
-}
-
 export default function RootLayout({ children }) {
   const [language, setLanguage] = useState('jp');
 
