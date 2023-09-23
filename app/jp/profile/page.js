@@ -1,5 +1,5 @@
 'use client';
-import { engProfileInfo, jpProfileInfo } from './variables'
+import { profileInfo } from './variables'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { IoIosDocument } from 'react-icons/io';
@@ -34,7 +34,7 @@ const profile = () => {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, ease: 'easeInOut', delay: 2 }}
                 >
-                    学ぶヒト。
+                    学ぶヤツ。
                 </motion.h1>
             </motion.div>
             <motion.section
@@ -42,15 +42,15 @@ const profile = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, ease: 'easeInOut', delay: 5 }}>
                 <h1 className="font-bold text-9xl mt-[100px] z-50 drop-shadow-2xl">
-                    {engProfileInfo.name}</h1>
+                    {profileInfo.name}</h1>
                 <div className='flex gap-3 mt-10 z-40'>
                     <div className='w-96'>
-                        <p className='font-light text-md'>{engProfileInfo.bio}</p>
+                        <p className='font-light text-md'>{profileInfo.bio}</p>
                         <div className='flex my-3 gap-5'>
                             <div>
                                 <h4>スキル</h4>
                                 <ul>
-                                    {engProfileInfo.skills.map((skill, index) => (
+                                    {profileInfo.skills.map((skill, index) => (
                                         <li key={index}
                                             className='font-light text-sm'
                                         >{skill}</li>
@@ -60,7 +60,7 @@ const profile = () => {
                             <div>
                                 <h4>言語</h4>
                                 <ul>
-                                    {engProfileInfo.languages.map((language, index) => (
+                                    {profileInfo.languages.map((language, index) => (
                                         <li key={index}
                                             className='font-light text-sm'
                                         >{language}</li>
@@ -70,7 +70,7 @@ const profile = () => {
                             <div>
                                 <h4>趣味</h4>
                                 <ul>
-                                    {engProfileInfo.hobbies.map((hobby, index) => (
+                                    {profileInfo.hobbies.map((hobby, index) => (
                                         <li key={index}
                                             className='font-light text-sm'
                                         >{hobby}</li>

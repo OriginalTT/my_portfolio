@@ -53,7 +53,7 @@ const ProjectDescription = ({ params }) => {
             <div className='flex gap-8 justify-between'>
                 <p className=' font-light flex-2'>{project.description}</p>
                 <div className='flex-1 min-w-[200px]'>
-                    <h3>使用技術</h3>
+                    <h3>Tech Used</h3>
                     <ul className='list-disc'>
                         {project.technology.length === 0 ?
                             <li className='ml-7 font-light'>なし</li> :
@@ -67,7 +67,7 @@ const ProjectDescription = ({ params }) => {
             </div>
             {project.tldr ?
                 <div className='bg-highlight2 rounded-xl p-5'>
-                    <h3 className='text-xl'>まとめ</h3>
+                    <h3 className='text-xl'>TL;DR</h3>
                     <ul className='list-disc'>
                         {project.tldr.map((tldr, index) => {
                             return (<li className='ml-7' key={index}>{tldr}</li>)

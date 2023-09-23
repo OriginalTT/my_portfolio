@@ -79,7 +79,7 @@ export const projects = [
                     </a>から元のファイルもご覧いただけます。</p>
                     <Image
                         width={800} height={1442}
-                        className="mx-auto my-1" src={'/projects/0/redesign.png'} alt="リデザインの解説" />
+                        className="mx-auto my-1" src={'/projects/0/redesign_jp.png'} alt="リデザインの解説" />
                 </div>
             </article>
         )
@@ -99,7 +99,7 @@ export const projects = [
         page: (
             <article className="flex flex-col gap-5">
                 <Image
-                    src={'/projects/1/design.png'}
+                    src={'/projects/1/design_jp.png'}
                     width={800} height={1668}
                     alt="デザインの解説" />
                 <a href='https://drive.google.com/file/d/15RswYj7NskPutRm6c6w8tMc5mAnsiA-O/view?usp=sharing' target='_blank'

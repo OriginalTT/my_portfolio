@@ -29,24 +29,25 @@ const contact = () => {
                 initial={{ y: 100, scale: 0 }}
                 animate={{ y: 0, scale: 1 }}
                 transition={{ duration: 1, delay: 0.5, ease: 'easeInOut' }}
-                className="p-10 w-[500px] rounded-xl flex flex-col items-center gap-5 mx-10 my-10"
+                className="p-10 w-[500px] rounded-xl flex flex-col items-center gap-5 mx-10 my-10
+                bg-highlight2"
                 ref={form} onSubmit={sendEmail}>
                 <div>
-                    <label for="name">お名前</label> <br />
+                    <label htmlFor="name">お名前</label> <br />
                     <input
                         className="bg-transparent p-2 border-offwhite border rounded-xl w-[400px]"
                         type="text" id="name" name="name" required />
                 </div>
 
                 <div>
-                    <label for="email">メールアドレス</label> <br />
+                    <label htmlFor="email">メールアドレス</label> <br />
                     <input
                         className="bg-transparent p-2 border-offwhite border rounded-xl w-[400px]"
                         type="email" id="email" name="email" required />
                 </div>
 
                 <div>
-                    <label for="message">メッセージ</label> <br />
+                    <label htmlFor="message">メッセージ</label> <br />
                     <textarea
                         className="bg-transparent p-2 border-offwhite border rounded-xl w-[400px]"
                         id="message" name="message" rows="4" required></textarea>
@@ -54,7 +55,8 @@ const contact = () => {
 
                 <div>
                     <button type="submit" value={'Send'}
-                        className="bg-offwhite text-highlight rounded-full px-3 py-2 drop-shadow-md ml-[300px]">Submit</button>
+                        className="bg-offwhite text-highlight rounded-full px-3 
+                        py-2 drop-shadow-md ml-[300px] w-[80px]">送信</button>
                 </div>
             </motion.form>
         </main>

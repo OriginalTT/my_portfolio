@@ -10,43 +10,44 @@ const contact = () => {
 
         emailjs.sendForm(process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID, process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID, form.current, process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY)
             .then((result) => {
-                window.alert('Success! Thanks for reaching out.');
+                window.alert('Success! Thanks for reaching out.\n連絡承りました。返信までしばらくお待ちください。');
             }, (error) => {
-                window.alert('Something went wrong. Try again!');
+                window.alert('Something went wrong. Try again!\nエラーが起きました。しばらくしてから再度お試しください。');
             });
     };
 
 
     return (
-        <main>
+        <main className='flex flex-col items-center'>
             <motion.h1
-                className="font-bold text-9xl mt-[200px] mx-10"
-                initial={{ scale: 0, x: -500 }}
-                animate={{ scale: 1, x: 0 }}
+                className="font-bold text-9xl mt-[200px]"
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
                 transition={{ type: 'spring', stiffness: 120, bounce: 1, }}
-            >\連絡ちょ/</motion.h1>
+            >\I'm Here!/</motion.h1>
             <motion.form
-                initial={{ x: -500 }}
-                animate={{ x: 0 }}
-                transition={{ duration: 1, delay: 1, ease: 'easeInOut' }}
-                className="p-10 w-[500px] rounded-xl flex flex-col items-center gap-5 mx-10 my-10"
+                initial={{ y: 100, scale: 0 }}
+                animate={{ y: 0, scale: 1 }}
+                transition={{ duration: 1, delay: 0.5, ease: 'easeInOut' }}
+                className="p-10 w-[500px] rounded-xl flex flex-col items-center gap-5 mx-10 my-10
+                bg-highlight2"
                 ref={form} onSubmit={sendEmail}>
                 <div>
-                    <label for="name">Name</label> <br />
+                    <label htmlFor="name">Name</label> <br />
                     <input
                         className="bg-transparent p-2 border-offwhite border rounded-xl w-[400px]"
                         type="text" id="name" name="name" required />
                 </div>
 
                 <div>
-                    <label for="email">Email</label> <br />
+                    <label htmlFor="email">Email</label> <br />
                     <input
                         className="bg-transparent p-2 border-offwhite border rounded-xl w-[400px]"
                         type="email" id="email" name="email" required />
                 </div>
 
                 <div>
-                    <label for="message">Message</label> <br />
+                    <label htmlFor="message">Message</label> <br />
                     <textarea
                         className="bg-transparent p-2 border-offwhite border rounded-xl w-[400px]"
                         id="message" name="message" rows="4" required></textarea>
