@@ -38,7 +38,7 @@ const ProjectDescription = ({ params }) => {
                         <Image
                             width={600} height={350}
                             className='rounded-xl  z-50 w-[800px] h-[500px]'
-                            src={`/projects/${project.id}/thumbnail_${thumbnailId}.jpg`}
+                            src={`/projects/${project.id}/thumbnail_${thumbnailId}.JPG`}
                             style={{ objectFit: "contain" }}
                             alt='Image' />
                     </div>

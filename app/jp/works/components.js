@@ -34,7 +34,7 @@ const ProjectCard = (props) => {
                     <Image
                         width={500} height={500}
                         className='rounded-xl z-50 w-[500px] h-[500px] box-border'
-                        src={`/projects/${project.id}/thumbnail_${thumbnailId}.jpg`}
+                        src={`/projects/${project.id}/thumbnail_${thumbnailId}.JPG`}
                         style={{ objectFit: "cover" }}
                         alt='Image' />
                 </div>
