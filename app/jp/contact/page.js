@@ -10,9 +10,9 @@ const contact = () => {
 
         emailjs.sendForm(process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID, process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID, form.current, process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY)
             .then((result) => {
-                window.alert('Success! Thanks for reaching out.');
+                window.alert('Success! Thanks for reaching out.\n連絡承りました。返信までしばらくお待ちください。');
             }, (error) => {
-                window.alert('Something went wrong. Try again!');
+                window.alert('Something went wrong. Try again!\nエラーが起きました。しばらくしてから再度お試しください。');
             });
     };
 
@@ -24,7 +24,7 @@ const contact = () => {
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ type: 'spring', stiffness: 120, bounce: 1, }}
-            >\はい、俺の連絡先!/</motion.h1>
+            >\連絡待ってます!/</motion.h1>
             <motion.form
                 initial={{ y: 100, scale: 0 }}
                 animate={{ y: 0, scale: 1 }}

@@ -33,7 +33,7 @@ const ProjectCard = (props) => {
                 <div>
                     <Image
                         width={500} height={500}
-                        className='rounded-xl  z-50 w-[500px] h-[500px]'
+                        className='rounded-xl z-50 w-[500px] h-[500px] box-border'
                         src={`/projects/${project.id}/thumbnail_${thumbnailId}.jpg`}
                         style={{ objectFit: "cover" }}
                         alt='Image' />
@@ -49,20 +49,20 @@ const ProjectCard = (props) => {
                 <div className='flex gap-2 px-1 my-3'>
                     {project.genre.map((genreId, index) => {
                         const genre = filterOptions.find((option) => option.id === genreId);
-                        return (<p key={index} className={`${genre.color} 
-                                                    px-2 py-1 rounded-md drop-shadow-sm text-xs text-offwhite`}>
+                        return (<p key={index}
+                            className={`${genre.color} px-2 py-1 rounded-md drop-shadow-sm text-xs text-offwhite`}>
                             {genre.name}
                         </p>)
                     })}
                 </div>
                 <p className='text-sm font-extralight my-5'>{project.description}</p>
-                <Link href={`${window.location.href}/${project.id}`}
+                <Link href={`/jp/works/${project.id}`}
                     className='text-lg font-bold bg-offwhite px-3 py-1 rounded-full 
-                    drop-shadow-sm text-highlight flex items-center w-fit gap-1
+                    text-highlight flex items-center w-fit gap-1
                     hover:bg-highlight hover:text-offwhite hover:border-offwhite
-                    hover:border-2 box-border'
+                    border-2 box-border'
                 >
-                    <AiFillInfoCircle className='inline text-2xl' />
+                    <AiFillInfoCircle className='inline text-xl' />
                     詳細はこちら</Link>
             </div>
             <div className='bg-highlight2 w-[500px] h-[500px] rounded-xl z-[-1] ml-[-450px] mt-[100px]'></div>
