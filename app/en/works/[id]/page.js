@@ -2,7 +2,9 @@
 import { projects } from '../variables';
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill, BsFillArrowUpCircleFill } from 'react-icons/bs';
+import { filterOptions } from '../variables';
 
 const ProjectDescription = ({ params }) => {
     const isBrowser = () => typeof window !== 'undefined';
@@ -13,6 +15,9 @@ const ProjectDescription = ({ params }) => {
 
     const project = projects.find((project) => project.id === Number(params.id));
     const [thumbnailId, setThumbnailId] = useState(0);
+
+    const allRelated = projects.filter((other) => other.genre.includes(project.genre[0]) && other.id !== project.id);
+    const related = allRelated.slice(0, 3);
 
     const handleThumbnailUpdate = (delta) => {
         setThumbnailId((prev) => {
@@ -76,8 +81,40 @@ const ProjectDescription = ({ params }) => {
                 </div>
                 : null}
             <div className='p-5'>
-
-            {project.page}
+                {project.page}
+            </div>
+            <div>
+                <h1 className='text-3xl my-10'>Related Works</h1>
+                <div className='flex flex-col gap-10'>
+                    {related.map((project, index) => {
+                        return (
+                            <Link
+                                href={`/en/works/${project.id}`}
+                                className='w-full rounded-xl bg-highlight2 hover:opacity-80 border-2 box-border border-highlight hover:border-offwhite' key={index}>
+                                <div className='flex'>
+                                    <Image src={`/projects/${project.id}/thumbnail_0.JPG`}
+                                        width={300} height={300} alt={`Thumbnail for ${project.title}`}
+                                        style={{ objectFit: 'cover' }}
+                                        className='rounded-l-xl h-[200px] min-w-[300px]'
+                                    />
+                                    <div className='mx-5 my-3'>
+                                        <h1>{project.title}</h1>
+                                        <div className='flex gap-2 px-1 my-1'>
+                                            {project.genre.map((genreId, index) => {
+                                                const genre = filterOptions.find((option) => option.id === genreId);
+                                                return (<p key={index}
+                                                    className={`${genre.color} px-2 py-1 rounded-md drop-shadow-sm text-xs text-offwhite`}>
+                                                    {genre.name}
+                                                </p>)
+                                            })}
+                                        </div>
+                                        <p className='text-sm font-extralight'>{project.description}</p>
+                                    </div>
+                                </div>
+                            </Link>
+                        )
+                    })}
+                </div>
             </div>
             <BsFillArrowUpCircleFill onClick={scrollToTop}
                 className='fixed bottom-[10%] right-[5%] text-5xl hover:text-hoverColor' />

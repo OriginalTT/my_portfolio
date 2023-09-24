@@ -73,7 +73,7 @@ export const projects = [
                 <div className="pt-3">
                     <h3 className="text-xl my-1">リデザイン</h3>
                     <p className="font-light my-1">分析結果をもとに、WEB サイトをリデザインし、Adobe XDを使いHigh-Fidelity Prototypeを作成。プロトタイプから一部抜粋し、以下に要点を記載しておりますが、<a href='https://drive.google.com/file/d/1bs0umhorDjJpGd-R0DCK7-6tB_S-ZRk9/view?usp=sharing' target="_blank"
-                        className="underline font-bold hover:text-purple-200"
+                        className="underline font-bold hover:text-hoverColor"
                     >こちら
                         <BiLinkExternal className='inline-block' />
                     </a>から元のファイルもご覧いただけます。</p>
@@ -284,7 +284,7 @@ export const projects = [
         "thumbnail": 1,
         "description": "Motorola Razrというガラケーで使えるように現代のアプリをデザインをするというプロジェクト。PayPalのガラケーに適したデザインを考察し、Low-Fidelity Prototypeを制作。",
         tldr: [
-            '基本テキストのみのデザインでも、スペーシングや箇条書きの使い方などの工夫でユーザビリティーを確保。',
+            'スペーシングや箇条書きの使い方などの工夫でユーザビリティーを確保。',
             'ハードウェアを考慮し、矢印ボタンでも操作しやすいデザインに。',
         ]
     },
