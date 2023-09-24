@@ -49,8 +49,8 @@ const works = () => {
 
     return (
         <main className='mx-auto my-[50px] max-w-[1000px]'>
-            <div className='w-fit mx-auto flex items-center gap-3 bg-offwhite 
-            text-highlight px-5 py-3 rounded-xl'>
+            <div className='w-fit mx-auto flex items-center gap-3 bg-highlight2 
+            text-offwhite px-5 py-3 rounded-xl'>
                 <AiFillFilter className='text-3xl' />
                 {filterOptions.map((option, index) => {
                     return (
