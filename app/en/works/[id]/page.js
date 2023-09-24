@@ -80,7 +80,7 @@ const ProjectDescription = ({ params }) => {
             {project.page}
             </div>
             <BsFillArrowUpCircleFill onClick={scrollToTop}
-                className='fixed bottom-[10%] right-[5%] text-5xl hover:text-purple-200' />
+                className='fixed bottom-[10%] right-[5%] text-5xl hover:text-hoverColor' />
         </main>
     )
 }

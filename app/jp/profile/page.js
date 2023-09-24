@@ -18,7 +18,7 @@ const profile = () => {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, ease: 'easeInOut' }}
                 >
-                    考え、
+                    プログラムが<br />
                 </motion.h1>
                 <motion.h1
                     className='font-bold text-9xl z-0'
@@ -26,7 +26,7 @@ const profile = () => {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, ease: 'easeInOut', delay: 1 }}
                 >
-                    創り、
+                    書ける
                 </motion.h1>
                 <motion.h1
                     className='font-bold text-9xl z-0'
@@ -34,7 +34,8 @@ const profile = () => {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, ease: 'easeInOut', delay: 2 }}
                 >
-                    学ぶヤツ。
+
+                    デザイナー。
                 </motion.h1>
             </motion.div>
             <motion.section
