@@ -48,7 +48,7 @@ const works = () => {
     }
 
     return (
-        <main className='mx-auto my-[100px] max-w-[1000px]'>
+        <main className='mx-auto my-[50px] max-w-[1000px]'>
             <div className='w-fit mx-auto flex items-center gap-3 bg-offwhite 
             text-highlight px-5 py-3 rounded-xl'>
                 <AiFillFilter className='text-3xl' />
@@ -68,7 +68,7 @@ const works = () => {
                     )
                 })}
             </div>
-            <div className='flex flex-col justify-center items-center gap-10 w-fit mx-auto'>
+            <div className='flex flex-col justify-center items-center gap-15 w-fit mx-auto'>
                 {projectList.map((project, index) => {
                     return (
                         <ProjectCard
@@ -79,7 +79,7 @@ const works = () => {
                 })}
             </div>
             <BsFillArrowUpCircleFill onClick={scrollToTop}
-                className='fixed bottom-[10%] right-[5%] text-5xl hover:text-purple-200' />
+                className='fixed bottom-[10%] right-[5%] text-5xl hover:text-hoverColor' />
         </main>
     )
 }

@@ -20,15 +20,15 @@ const contact = () => {
     return (
         <main className='flex flex-col items-center'>
             <motion.h1
-                className="font-bold text-9xl mt-[200px]"
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                transition={{ type: 'spring', stiffness: 120, bounce: 1, }}
-            >\連絡待ってます!/</motion.h1>
+                className="font-bold text-7xl mt-[100px]"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, ease: 'easeOut' }}
+            >ご連絡、<br />お待ちしております。</motion.h1>
             <motion.form
-                initial={{ y: 100, scale: 0 }}
-                animate={{ y: 0, scale: 1 }}
-                transition={{ duration: 1, delay: 0.5, ease: 'easeInOut' }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, ease: 'easeOut', delay: 0.5 }}
                 className="p-10 w-[500px] rounded-xl flex flex-col items-center gap-5 mx-10 my-10
                 bg-highlight2"
                 ref={form} onSubmit={sendEmail}>
@@ -56,7 +56,8 @@ const contact = () => {
                 <div>
                     <button type="submit" value={'Send'}
                         className="bg-offwhite text-highlight rounded-full px-3 
-                        py-2 drop-shadow-md ml-[300px] w-[80px]">送信</button>
+                        py-2 drop-shadow-md ml-[300px] w-[80px] box-border border-2 border-offwhite
+                        hover:text-offwhite hover:border-offwhite hover:bg-highlight">送信</button>
                 </div>
             </motion.form>
         </main>

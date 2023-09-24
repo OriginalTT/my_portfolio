@@ -37,7 +37,7 @@ const ProjectDescription = ({ params }) => {
                     <div>
                         <Image
                             width={600} height={350}
-                            className='rounded-xl  z-50 w-[800px] h-[500px]'
+                            className='rounded-xl rounded-  z-50 w-[800px] h-[500px]'
                             src={`/projects/${project.id}/thumbnail_${thumbnailId}.JPG`}
                             style={{ objectFit: "contain" }}
                             alt='Image' />
@@ -80,7 +80,7 @@ const ProjectDescription = ({ params }) => {
             {project.page}
             </div>
             <BsFillArrowUpCircleFill onClick={scrollToTop}
-                className='fixed bottom-[10%] right-[5%] text-5xl hover:text-purple-200' />
+                className='fixed bottom-[10%] right-[5%] text-5xl hover:text-hoverColor' />
         </main>
     )
 }

@@ -22,12 +22,12 @@ export default function RootLayout({ children }) {
         suppressHydrationWarning
       >
         <div className='flex justify-between w-11/12 max-w-[1500px] mx-auto'>
-          <Link href={'/'} className='font-bold hover:text-purple-200'>Tentaro Kubo</Link>
+          <Link href={'/'} className='font-bold hover:text-hoverColor'>Tentaro Kubo</Link>
           <nav className='flex gap-3 font-light items-center'>
-            <Link href={`/jp/profile`} className='hover:text-purple-200'>Profile</Link>
-            <Link href={`/jp/works`} className='hover:text-purple-200'>Works</Link>
-            <Link href={`/jp/contact`} className='hover:text-purple-200'>Contact</Link>
-            <Link href={'/'} className='hover:text-purple-200'><BsTranslate /></Link>
+            <Link href={`/jp/profile`} className='hover:text-hoverColor hover:underline'>プロフィール</Link>
+            <Link href={`/jp/works`} className='hover:text-hoverColor hover:underline'>作品</Link>
+            <Link href={`/jp/contact`} className='hover:text-hoverColor hover:underline'>連絡先</Link>
+            <Link href={'/'} className='hover:text-hoverColor hover:underline'><BsTranslate /></Link>
           </nav>
         </div>
       </motion.header>

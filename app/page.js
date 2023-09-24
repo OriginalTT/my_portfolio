@@ -15,12 +15,12 @@ export default function Home() {
         suppressHydrationWarning
       >
         <div className='flex justify-between w-11/12 max-w-[1500px] mx-auto'>
-          <Link href={'/'} className='font-bold hover:text-purple-200'>Tentaro Kubo</Link>
+          <Link href={'/'} className='font-bold hover:text-hoverColor'>Tentaro Kubo</Link>
           <nav className='flex gap-3 font-light items-center'>
-            <Link href={`/en/profile`} className='hover:text-purple-200'>Profile</Link>
-            <Link href={`/en/works`} className='hover:text-purple-200'>Works</Link>
-            <Link href={`/en/contact`} className='hover:text-purple-200'>Contact</Link>
-            <Link href={'/'} className='hover:text-purple-200'><BsTranslate /></Link>
+            <Link href={`/en/profile`} className='hover:text-hoverColor hover:underline'>Profile</Link>
+            <Link href={`/en/works`} className='hover:text-hoverColor hover:underline'>Works</Link>
+            <Link href={`/en/contact`} className='hover:text-hoverColor hover:underline'>Contact</Link>
+            <Link href={'/'} className='hover:text-hoverColor hover:underline'><BsTranslate /></Link>
           </nav>
         </div>
       </motion.header>
@@ -32,7 +32,7 @@ export default function Home() {
           transition={{ duration: 1, delay: 1, ease: 'easeInOut' }}>
           <Link
             href='/en/profile'
-            className="font-bold text-9xl mx-10 hover:text-purple-200" >
+            className="font-bold text-9xl mx-10 hover:text-hoverColor" >
             Hello! <MdNavigateNext className="inline" /></Link>
         </motion.div>
         <motion.div
@@ -41,7 +41,7 @@ export default function Home() {
           transition={{ duration: 1, delay: 1, ease: 'easeInOut' }}>
           <Link
             href='/jp/profile'
-            className='font-bold text-9xl mx-10 hover:text-purple-200'>
+            className='font-bold text-9xl mx-10 hover:text-hoverColor'>
             こんにちは! <MdNavigateNext className="inline" />
           </Link>
         </motion.div>

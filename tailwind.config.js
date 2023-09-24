@@ -11,10 +11,11 @@ module.exports = {
         sans: ['var(--font-noto-sans-jp)'],
       },
       colors: {
-        'highlight': '#4A3440',
-        'highlight2': '#53464D',
-        'offwhite': '#F1F1F1',
+        'highlight': '#E0E0D8',
+        'highlight2': '#EDE8D5',
+        'offwhite': '#0C0C0C',
         'offblack': '#0C0C0C',
+        'hoverColor': '#B3AFA1'
       }
     },
   },

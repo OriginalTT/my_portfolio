@@ -2,10 +2,10 @@ import { BiLinkExternal } from 'react-icons/bi';
 import Image from 'next/image';
 
 export const filterOptions = [
-    { id: 0, name: "UX", color: 'bg-cyan-700' },
-    { id: 1, name: "Front-End Dev.", color: 'bg-green-700' },
-    { id: 2, name: "Videography", color: 'bg-orange-700' },
-    { id: 3, name: "Social Media", color: 'bg-purple-700' },
+    { id: 0, name: "UX", color: 'bg-cyan-200' },
+    { id: 1, name: "Front-End Dev.", color: 'bg-green-200' },
+    { id: 2, name: "Videography", color: 'bg-orange-200' },
+    { id: 3, name: "Social Media", color: 'bg-purple-200' },
 ];
 
 export const projects = [
