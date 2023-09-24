@@ -1,5 +1,7 @@
 import { BiLinkExternal } from 'react-icons/bi';
 import Image from 'next/image';
+import watamiImage from '/public/projects/0/redesign_en.webp';
+import foodlyImage from '/public/projects/1/design_en.webp';
 
 export const filterOptions = [
     { id: 0, name: "UX", color: 'bg-cyan-200' },
@@ -79,8 +81,9 @@ export const projects = [
                         <BiLinkExternal className='inline-block' />
                     </a>.</p>
                     <Image
-                        width={800} height={1442}
-                        className="mx-auto my-1" src={'/projects/0/redesign_en.png'} alt="Explanation of the redesign" />
+                        src={watamiImage}
+                        quality={100} priority={true} placeholder='blur'
+                        className="mx-auto my-1" alt="Explanation of the redesign" />
                 </div>
             </article>
         )
@@ -100,8 +103,8 @@ export const projects = [
         page: (
             <article className="flex flex-col gap-5">
                 <Image
-                    src={'/projects/1/design_en.png'}
-                    width={800} height={1668}
+                    src={foodlyImage}
+                    quality={100} priority={true} placeholder='blur'
                     alt="Explanation of the design" />
                 <a href='https://drive.google.com/file/d/15RswYj7NskPutRm6c6w8tMc5mAnsiA-O/view?usp=sharing' target='_blank'
                     className='font-bold bg-offwhite text-highlight px-5 py-3 rounded-full 
