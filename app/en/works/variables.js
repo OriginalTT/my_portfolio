@@ -172,6 +172,29 @@ export const projects = [
         )
     },
     {
+        id: 12,
+        "title": "ESTICO Website Creation",
+        "genre": [1, 0],
+        "technology": ['HTML', 'CSS', 'JavaScript'],
+        "thumbnail": 2,
+        "description": "Developed a website for ESTICO, an esthetic salon in Fukuoka, upon their request. This was my first experience as a professional web developer. I also took care of domain registration and server rental. Furthermore, this sparked my interest in the backend, prompting me to start learning about full-stack development using frameworks like Next.js.",
+        tldr: [
+            'Developed a website using foundational technologies like HTML and CSS.',
+            'Handled deployment tasks such as domain registration.',
+            'Integrated external services, establishing a link with platforms like Instagram.'
+        ],
+        page: (
+            <article className="flex flex-col gap-5">
+                <a href='https://www.estico.net/index.html' target='_blank'
+                    className='font-bold bg-offwhite text-highlight px-5 py-3 rounded-full 
+                    w-fit mx-auto hover:text-offwhite hover:bg-highlight2 border-offwhite border-2 box-border'
+                >Visit the website
+                    <BiLinkExternal className='inline-block' />
+                </a>
+            </article>
+        )
+    },
+    {
         id: 6,
         "title": "Let's Drink More Coffee!",
         "genre": [2],
@@ -183,7 +206,7 @@ export const projects = [
     {
         id: 4,
         "title": "Weather App",
-        "genre": [0, 1],
+        "genre": [1, 0],
         "technology": ['HTML', 'CSS', 'JavaScript', 'React', 'API'],
         "thumbnail": 2,
         "description": "A project undertaken voluntarily to study the usage of APIs. The app fetches and displays weather information and background images using APIs. A lot of intricate details were incorporated to ensure user usability amidst many uncertain elements.",
