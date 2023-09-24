@@ -245,9 +245,9 @@ export const projects = [
                 <div className="pt-3">
                     <h3 className="text-xl my-1">ペルソナ制作</h3>
                     <p className="font-light my-1">リサーチをもとに以下のペルソナを制作。</p>
-                    <Image src={'/projects/7/thumbnail_0.jpg'} width={750} height={700} />
-                    <Image src={'/projects/7/thumbnail_1.jpg'} width={750} height={700} />
-                    <Image src={'/projects/7/thumbnail_2.jpg'} width={750} height={700} />
+                    <Image src={'/projects/7/thumbnail_0.JPG'} width={750} height={700} />
+                    <Image src={'/projects/7/thumbnail_1.JPG'} width={750} height={700} />
+                    <Image src={'/projects/7/thumbnail_2.JPG'} width={750} height={700} />
                 </div>
             </article>
         )
