@@ -69,13 +69,13 @@ const ProjectCard = (props) => {
                     </div>
                     <p className='text-sm font-extralight my-5'>{project.description}</p>
                     <Link href={`/en/works/${project.id}`}
-                        className='text-lg font-bold bg-offwhite px-3 py-1 rounded-full 
+                        className='text-lg bg-offwhite px-3 py-1 rounded-full 
                     text-highlight flex items-center w-fit gap-1
-                    hover:bg-highlight hover:text-offwhite hover:border-offwhite
+                    hover:bg-highlight hover:text-offwhite border-offwhite
                     border-2 box-border'
                     >
                         <AiFillInfoCircle className='inline text-xl' />
-                        More Info</Link>
+                        Learn More</Link>
                 </div>
                 <div className='bg-highlight2 w-[500px] h-[500px] rounded-r-xl z-[-1] ml-[-450px]'></div>
             </div>

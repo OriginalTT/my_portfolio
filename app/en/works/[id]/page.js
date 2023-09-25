@@ -32,6 +32,12 @@ const ProjectDescription = ({ params }) => {
 
     return (
         <main className='max-w-[800px] w-2/3 mx-auto my-10 flex flex-col gap-5 items-left'>
+            <Link href={'/en/works'} className='flex gap-3 items-center bg-offwhite text-highlight
+            box-border border-2 border-offwhite
+            w-fit px-5 py-3 rounded-full hover:bg-hoverColor hover:text-offwhite'>
+                <BsFillArrowLeftCircleFill className='text-xl' />
+                <p>Back</p>
+            </Link>
             {project.video ? project.video :
                 <div className='flex items-center w-fit mx-auto'>
                     <BsFillArrowLeftCircleFill

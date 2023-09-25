@@ -49,9 +49,9 @@ const profile = () => {
                             </div>
                         </div>
                         <a
-                            className='flex items-center gap-1 text-lg py-3 px-5 
-                                bg-offwhite text-highlight rounded-full w-fit ml-auto mr-5  mt-10 box-border
-                                hover:bg-highlight2 hover:text-offwhite border-offwhite border-2'
+                            className='flex items-center gap-1 py-3 px-5 
+                            bg-offwhite text-highlight rounded-full w-fit ml-auto mr-5 mt-10 box-border
+                            hover:bg-highlight2 hover:text-offwhite border-offwhite border-2'
                             href={'https://drive.google.com/file/d/1R7JcxSxMEy6THsyqy0GOMDfhLk-iUYu9/view?usp=drive_link'}
                             target='_blank'
                         >
@@ -61,7 +61,7 @@ const profile = () => {
                     </div>
                     <Image
                         src='/portrait.jpg' width={500} height={500} alt="headshot" />
-                </div >
+                </div>
             </motion.section>
         </main >
     )

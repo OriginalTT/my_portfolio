@@ -55,9 +55,8 @@ const contact = () => {
 
                 <div>
                     <button type="submit" value={'Send'}
-                        className="bg-offwhite text-highlight rounded-full px-3 
-                        py-2 drop-shadow-md ml-[300px] w-[80px] box-border border-2 border-offwhite
-                        hover:text-offwhite hover:border-offwhite hover:bg-highlight">送信</button>
+                        className="bg-offwhite text-highlight rounded-full min-w-[100px] px-5 py-3 drop-shadow-md ml-[300px]
+                        box-border border-2 border-offwhite hover:text-offwhite hover:bg-highlight">送信</button>
                 </div>
             </motion.form>
         </main>
