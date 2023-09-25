@@ -7,40 +7,10 @@ import { IoIosDocument } from 'react-icons/io';
 const profile = () => {
     return (
         <main className='w-fit mx-auto'>
-            <motion.div
-                className='absolute z-0'
-                initial={{ opacity: 1 }}
-                animate={{ opacity: 0 }}
-                transition={{ duration: 1, ease: 'easeInOut', delay: 4 }}>
-                <motion.h1
-                    className=' font-bold text-9xl'
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1, ease: 'easeInOut' }}
-                >
-                    A Designer?
-                </motion.h1>
-                <motion.h1
-                    className='font-bold text-9xl z-0'
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1, ease: 'easeInOut', delay: 1 }}
-                >
-                    Programmer?
-                </motion.h1>
-                <motion.h1
-                    className='font-bold text-9xl z-0'
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1, ease: 'easeInOut', delay: 2 }}
-                >
-                    No no, Both!
-                </motion.h1>
-            </motion.div>
             <motion.section
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 1, ease: 'easeInOut', delay: 5 }}>
+                transition={{ duration: 1, ease: 'easeInOut', }}>
                 <h1 className="font-bold text-9xl mt-[100px] z-50 drop-shadow-2xl">
                     {profileInfo.name}</h1>
                 <div className='flex gap-3 mt-10 z-40'>
