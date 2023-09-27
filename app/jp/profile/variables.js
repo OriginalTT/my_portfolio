@@ -15,5 +15,6 @@ export const profileInfo = {
     hobbies: [
         'ゲーム',
         '音楽鑑賞',
+        '画像生成AI'
     ]
 }

@@ -29,22 +29,22 @@ const profile = () => {
                                 </ul>
                             </div>
                             <div>
-                                <h4>Languages</h4>
-                                <ul>
-                                    {profileInfo.languages.map((language, index) => (
-                                        <li key={index}
-                                            className='font-light text-sm'
-                                        >{language}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div>
                                 <h4>Hobbies</h4>
                                 <ul>
                                     {profileInfo.hobbies.map((hobby, index) => (
                                         <li key={index}
                                             className='font-light text-sm'
                                         >{hobby}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                            <div>
+                                <h4>Languages</h4>
+                                <ul>
+                                    {profileInfo.languages.map((language, index) => (
+                                        <li key={index}
+                                            className='font-light text-sm'
+                                        >{language}</li>
                                     ))}
                                 </ul>
                             </div>

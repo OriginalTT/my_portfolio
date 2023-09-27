@@ -14,6 +14,7 @@ export const profileInfo = {
     ],
     hobbies: [
         'Gaming',
-        'Listening to Music',
+        'Music',
+        'Generative AI'
     ]
 }
