@@ -60,7 +60,10 @@ const profile = () => {
                         </a>
                     </div>
                     <Image
-                        src='/portrait.jpg' width={500} height={500} alt="headshot" />
+                        quality={100} priority={true}
+                        src='/portrait.webp' width={500} height={500} 
+                        alt="Professional headshot of Tentaro Kubo"
+                        className='rounded-2xl' />
                 </div>
             </motion.section>
         </main >

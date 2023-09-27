@@ -116,37 +116,23 @@ export const projects = [
         )
     },
     {
-        id: 2,
-        "title": "Curiosity",
-        "genre": [2],
-        "technology": ['Adobe Premiere Pro', 'Canon EOS 90D'],
-        "thumbnail": 3,
-        "description": "A project that conveys emotions solely through visuals. The challenge was to communicate feelings without using sound effects or dialogue. In this project, the emotion of 'curiosity' was chosen.",
-        video: (<iframe width="800" height="500" src="https://www.youtube.com/embed/6fjE64XGk2k?si=dIrMZAvSBI-n5iQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>),
+        id: 12,
+        "title": "ESTICO Website Creation",
+        "genre": [1, 0],
+        "technology": ['HTML', 'CSS', 'JavaScript'],
+        "thumbnail": 2,
+        "description": "Developed a website for ESTICO, an esthetic salon in Fukuoka, upon their request. This was my first experience as a professional web developer. I also took care of domain registration and server rental. Furthermore, this sparked my interest in the backend, prompting me to start learning about full-stack development using frameworks like Next.js.",
         tldr: [
-            'Create development by adjusting the same visuals.',
-            'Make impressions by using color pinpointedly.',
-            'Effectively use lights to produce a three-dimensional feel, even in black and white.'
-        ]
-    },
-    {
-        id: 3,
-        "title": "Alto 2 Go",
-        "genre": [2, 3],
-        "technology": ['Adobe Premiere Pro', 'Adobe After Effects'],
-        "thumbnail": 4,
-        "description": "A project started with a friend who is active as a composer and arranger. Posts cover videos of J-pop and anime songs on short video platforms such as TikTok. Responsible for video editing, composition, and direction.",
-        tldr: [
-            'Formulated a format that is highly rated by the algorithm.',
-            'Based on data, update editing and composition periodically.',
-            'Recorded a maximum playback of about 30,000 times.'
+            'Developed a website using foundational technologies like HTML and CSS.',
+            'Handled deployment tasks such as domain registration.',
+            'Integrated external services, establishing a link with platforms like Instagram.'
         ],
         page: (
             <article className="flex flex-col gap-5">
-                <a href='https://www.tiktok.com/@alto2go' target='_blank'
+                <a href='https://www.estico.net/index.html' target='_blank'
                     className='font-bold bg-offwhite text-highlight px-5 py-3 rounded-full 
                     w-fit mx-auto hover:text-offwhite hover:bg-highlight2 border-offwhite border-2 box-border'
-                >Check out the TikTok account here
+                >Visit the website
                     <BiLinkExternal className='inline-block' />
                 </a>
             </article>
@@ -172,36 +158,18 @@ export const projects = [
         )
     },
     {
-        id: 12,
-        "title": "ESTICO Website Creation",
-        "genre": [1, 0],
-        "technology": ['HTML', 'CSS', 'JavaScript'],
-        "thumbnail": 2,
-        "description": "Developed a website for ESTICO, an esthetic salon in Fukuoka, upon their request. This was my first experience as a professional web developer. I also took care of domain registration and server rental. Furthermore, this sparked my interest in the backend, prompting me to start learning about full-stack development using frameworks like Next.js.",
-        tldr: [
-            'Developed a website using foundational technologies like HTML and CSS.',
-            'Handled deployment tasks such as domain registration.',
-            'Integrated external services, establishing a link with platforms like Instagram.'
-        ],
-        page: (
-            <article className="flex flex-col gap-5">
-                <a href='https://www.estico.net/index.html' target='_blank'
-                    className='font-bold bg-offwhite text-highlight px-5 py-3 rounded-full 
-                    w-fit mx-auto hover:text-offwhite hover:bg-highlight2 border-offwhite border-2 box-border'
-                >Visit the website
-                    <BiLinkExternal className='inline-block' />
-                </a>
-            </article>
-        )
-    },
-    {
-        id: 6,
-        "title": "Let's Drink More Coffee!",
+        id: 2,
+        "title": "Curiosity",
         "genre": [2],
-        "technology": ['Adobe Premiere Pro', 'Adobe After Effects'],
-        "thumbnail": 2,
-        "description": "Storytelling through motion graphics. The challenge is how to convey a clear Call to Action to viewers. Produced in a short video format that is a recent trend, with a tall screen ratio and a maximum duration of 30 seconds.",
-        video: (<iframe width="800" height="500" src="https://youtube.com/embed/Vf1FHaUaSik?si=KJUhXH9qKrKEu5yK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>)
+        "technology": ['Adobe Premiere Pro', 'Canon EOS 90D'],
+        "thumbnail": 3,
+        "description": "A project that conveys emotions solely through visuals. The challenge was to communicate feelings without using sound effects or dialogue. In this project, the emotion of 'curiosity' was chosen.",
+        video: (<iframe width="800" height="500" src="https://www.youtube.com/embed/6fjE64XGk2k?si=dIrMZAvSBI-n5iQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>),
+        tldr: [
+            'Create development by adjusting the same visuals.',
+            'Make impressions by using color pinpointedly.',
+            'Effectively use lights to produce a three-dimensional feel, even in black and white.'
+        ]
     },
     {
         id: 4,
@@ -226,6 +194,38 @@ export const projects = [
                 </a>
             </article>
         )
+    },
+    {
+        id: 3,
+        "title": "Alto 2 Go",
+        "genre": [2, 3],
+        "technology": ['Adobe Premiere Pro', 'Adobe After Effects'],
+        "thumbnail": 4,
+        "description": "A project started with a friend who is active as a composer and arranger. Posts cover videos of J-pop and anime songs on short video platforms such as TikTok. Responsible for video editing, composition, and direction.",
+        tldr: [
+            'Formulated a format that is highly rated by the algorithm.',
+            'Based on data, update editing and composition periodically.',
+            'Recorded a maximum playback of about 30,000 times.'
+        ],
+        page: (
+            <article className="flex flex-col gap-5">
+                <a href='https://www.tiktok.com/@alto2go' target='_blank'
+                    className='font-bold bg-offwhite text-highlight px-5 py-3 rounded-full 
+                    w-fit mx-auto hover:text-offwhite hover:bg-highlight2 border-offwhite border-2 box-border'
+                >Check out the TikTok account here
+                    <BiLinkExternal className='inline-block' />
+                </a>
+            </article>
+        )
+    },
+    {
+        id: 6,
+        "title": "Let's Drink More Coffee!",
+        "genre": [2],
+        "technology": ['Adobe Premiere Pro', 'Adobe After Effects'],
+        "thumbnail": 2,
+        "description": "Storytelling through motion graphics. The challenge is how to convey a clear Call to Action to viewers. Produced in a short video format that is a recent trend, with a tall screen ratio and a maximum duration of 30 seconds.",
+        video: (<iframe width="800" height="500" src="https://youtube.com/embed/Vf1FHaUaSik?si=KJUhXH9qKrKEu5yK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>)
     },
     {
         id: 5,

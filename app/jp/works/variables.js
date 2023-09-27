@@ -115,37 +115,23 @@ export const projects = [
         )
     },
     {
-        id: 2,
-        "title": "Curiosity",
-        "genre": [2],
-        "technology": ['Adobe Premiere Pro', 'Canon EOS 90D'],
-        "thumbnail": 3,
-        "description": "映像のみで感情を伝えるというプロジェクト。効果音もセリフも使わずにしていかに感情を伝えるかが試された。このプロジェクトでは、「好奇心」という感情を選択。",
-        video: (<iframe width="800" height="500" src="https://www.youtube.com/embed/6fjE64XGk2k?si=dIrMZAvSBI-n5iQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>),
+        id: 12,
+        "title": "ESTICO ホームページ制作",
+        "genre": [1, 0],
+        "technology": ['HTML', 'CSS', 'JavaScript'],
+        "thumbnail": 2,
+        "description": "福岡のエステサロン、ESTICO様に依頼されてWEBサイトを制作。初のプロとしてのWEB開発の経験。ドメインの取得やサーバーのレンタルなども行う。また、これをきっかけにバックエンドへの興味が湧いたため、Next.jsなどのフレームワークを使ったフルスタックの開発の勉強を始める。",
         tldr: [
-            '同じ映像の間を調整することで展開をつくる。',
-            'ピンポイントで色を使うことによって、印象ずける。',
-            'ライトを効果的に使い、白黒でも立体感を演出。'
-        ]
-    },
-    {
-        id: 3,
-        "title": "アルト2号",
-        "genre": [2, 3],
-        "technology": ['Adobe Premiere Pro', 'Adobe After Effects'],
-        "thumbnail": 4,
-        "description": '作編曲家として活動している友人と始めたプロジェクト。TikTokなどのショート動画のプラットフォームでJ-popやアニソンのカバー動画を投稿。動画編集、構成、ディレクションなどを担当。',
-        tldr: [
-            'アルゴリズムによって高評価を受けるフォーマットを立案。',
-            'データをもとに、随時編集、構成などをアップデート',
-            '最高再生回数は約3万回再生を記録。'
+            'HTMLやCSSなどの基礎的な技術を使ってWEBサイトを制作。',
+            'ドメインの取得などのデプロイメントの作業を行う。',
+            '外部サービスを使い、Instagramなどとの連携を行う。'
         ],
         page: (
             <article className="flex flex-col gap-5">
-                <a href='https://www.tiktok.com/@alto2go' target='_blank'
+                <a href='https://www.estico.net/index.html' target='_blank'
                     className='font-bold bg-offwhite text-highlight px-5 py-3 rounded-full 
                     w-fit mx-auto hover:text-offwhite hover:bg-highlight2 border-offwhite border-2 box-border'
-                >TikTokアカウントはこちら
+                >ホームページはこちら
                     <BiLinkExternal className='inline-block' />
                 </a>
             </article>
@@ -171,36 +157,18 @@ export const projects = [
         )
     },
     {
-        id: 12,
-        "title": "ESTICO ホームページ制作",
-        "genre": [1, 0],
-        "technology": ['HTML', 'CSS', 'JavaScript'],
-        "thumbnail": 2,
-        "description": "福岡のエステサロン、ESTICO様に依頼されてWEBサイトを制作。初のプロとしてのWEB開発の経験。ドメインの取得やサーバーのレンタルなども行う。また、これをきっかけにバックエンドへの興味が湧いたため、Next.jsなどのフレームワークを使ったフルスタックの開発の勉強を始める。",
-        tldr: [
-            'HTMLやCSSなどの基礎的な技術を使ってWEBサイトを制作。',
-            'ドメインの取得などのデプロイメントの作業を行う。',
-            '外部サービスを使い、Instagramなどとの連携を行う。'
-        ],
-        page: (
-            <article className="flex flex-col gap-5">
-                <a href='https://www.estico.net/index.html' target='_blank'
-                    className='font-bold bg-offwhite text-highlight px-5 py-3 rounded-full 
-                    w-fit mx-auto hover:text-offwhite hover:bg-highlight2 border-offwhite border-2 box-border'
-                >ホームページはこちら
-                    <BiLinkExternal className='inline-block' />
-                </a>
-            </article>
-        )
-    },
-    {
-        id: 6,
-        "title": "Let's Drink More Coffee!",
+        id: 2,
+        "title": "Curiosity",
         "genre": [2],
-        "technology": ['Adobe Premiere Pro', 'Adobe After Effects'],
-        "thumbnail": 2,
-        "description": "モーショングラフィックスをとおしてのストーリーテリング。明確なCall to Actionをいかに視聴者に伝えるのかという課題。縦長の画面比、尺も最大30秒という近年のトレンドであるショート動画のフォーマットで制作。",
-        video: (<iframe width="800" height="500" src="https://youtube.com/embed/Vf1FHaUaSik?si=KJUhXH9qKrKEu5yK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>)
+        "technology": ['Adobe Premiere Pro', 'Canon EOS 90D'],
+        "thumbnail": 3,
+        "description": "映像のみで感情を伝えるというプロジェクト。効果音もセリフも使わずにしていかに感情を伝えるかが試された。このプロジェクトでは、「好奇心」という感情を選択。",
+        video: (<iframe width="800" height="500" src="https://www.youtube.com/embed/6fjE64XGk2k?si=dIrMZAvSBI-n5iQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>),
+        tldr: [
+            '同じ映像の間を調整することで展開をつくる。',
+            'ピンポイントで色を使うことによって、印象ずける。',
+            'ライトを効果的に使い、白黒でも立体感を演出。'
+        ]
     },
     {
         id: 4,
@@ -225,6 +193,38 @@ export const projects = [
                 </a>
             </article>
         )
+    },
+    {
+        id: 3,
+        "title": "アルト2号",
+        "genre": [2, 3],
+        "technology": ['Adobe Premiere Pro', 'Adobe After Effects'],
+        "thumbnail": 4,
+        "description": '作編曲家として活動している友人と始めたプロジェクト。TikTokなどのショート動画のプラットフォームでJ-popやアニソンのカバー動画を投稿。動画編集、構成、ディレクションなどを担当。',
+        tldr: [
+            'アルゴリズムによって高評価を受けるフォーマットを立案。',
+            'データをもとに、随時編集、構成などをアップデート',
+            '最高再生回数は約3万回再生を記録。'
+        ],
+        page: (
+            <article className="flex flex-col gap-5">
+                <a href='https://www.tiktok.com/@alto2go' target='_blank'
+                    className='font-bold bg-offwhite text-highlight px-5 py-3 rounded-full 
+                    w-fit mx-auto hover:text-offwhite hover:bg-highlight2 border-offwhite border-2 box-border'
+                >TikTokアカウントはこちら
+                    <BiLinkExternal className='inline-block' />
+                </a>
+            </article>
+        )
+    },
+    {
+        id: 6,
+        "title": "Let's Drink More Coffee!",
+        "genre": [2],
+        "technology": ['Adobe Premiere Pro', 'Adobe After Effects'],
+        "thumbnail": 2,
+        "description": "モーショングラフィックスをとおしてのストーリーテリング。明確なCall to Actionをいかに視聴者に伝えるのかという課題。縦長の画面比、尺も最大30秒という近年のトレンドであるショート動画のフォーマットで制作。",
+        video: (<iframe width="800" height="500" src="https://youtube.com/embed/Vf1FHaUaSik?si=KJUhXH9qKrKEu5yK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>)
     },
     {
         id: 5,
