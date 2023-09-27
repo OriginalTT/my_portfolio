@@ -3,6 +3,7 @@ import { profileInfo } from './variables'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { IoIosDocument } from 'react-icons/io';
+import profilePicture from '/public/portrait.webp';
 
 const profile = () => {
     return (
@@ -60,8 +61,8 @@ const profile = () => {
                         </a>
                     </div>
                     <Image
-                        quality={100} priority={true}
-                        src='/portrait.webp' width={500} height={500} 
+                        quality={100} priority={true} placeholder='blur'
+                        src={profilePicture} width={500} height={500}
                         alt="Professional headshot of Tentaro Kubo"
                         className='rounded-2xl' />
                 </div>
