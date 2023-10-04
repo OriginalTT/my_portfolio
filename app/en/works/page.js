@@ -72,7 +72,7 @@ const works = () => {
                     )
                 })}
             </motion.div>
-            <div className='flex flex-col justify-center items-center gap-15 w-fit mx-auto'>
+            <div className='flex flex-col justify-center items-center gap-10 mt-10 w-fit mx-auto'>
                 {projectList.map((project, index) => {
                     return (
                         <motion.div
