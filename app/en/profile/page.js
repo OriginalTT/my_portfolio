@@ -15,8 +15,8 @@ const profile = () => {
                 transition={{ duration: 1, ease: 'easeInOut', }}>
                 <h1 className="font-bold text-4xl md:text-9xl mt-10 ml-5 md:mt-[100px] md:ml-0 z-50 drop-shadow-2xl">
                     {profileInfo.name}</h1>
-                <div className='flex flex-col-reverse md:flex-row gap-3 mt-3 md:mt-10 w-11/12 max-w-screen-lg mx-auto'>
-                    <div>
+                <div className='flex flex-col-reverse md:flex-row gap-3 mt-3 md:mt-10 w-11/12 md:w-fit max-w-screen-lg mx-auto'>
+                    <div className='md:w-[350px]'>
                         <p className='font-light text-md'>{profileInfo.bio}</p>
                         <div className='flex my-3 gap-5'>
                             <div>
