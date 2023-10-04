@@ -17,7 +17,7 @@ export const projects = [
         "genre": [0],
         "technology": ['Adobe XD', 'Adobe Photoshop', 'Adobe Illustrator'],
         "thumbnail": 4,
-        "description": "ローカル企業のWEB サイトを分析、そしてリデザインするという大学の授業の一環で行ったプロジェクト。Watami Sushiというカナダ、ウォータールーにある寿司屋のWEBサイトの改善を行った。",
+        "description": "ローカル企業のWEB サイトを分析、そしてリデザインするという大学の授業の一環で行ったプロジェクトです。Watami Sushiというカナダ、ウォータールーに実際にある寿司屋のWEBサイトの改善を行いました。",
         tldr: [
             'ユーザーと共感し、ユーザーが求めている情報が自然と手に入るレイアウトに改善。',
             '「Call to Action」までの導線設計を明確化。',
@@ -27,13 +27,13 @@ export const projects = [
             <article className="flex flex-col gap-5">
                 <div className="">
                     <h3 className="text-xl my-1">流れ</h3>
-                    <p className="font-light my-1">このプロジェクトは大きく二つのセクションに分かれています。一つは元のWEBサイトの分析・批評。もう一つはそれをもとに改善したHigh Fidelity Prototypeの制作です。High Fidelity PrototypeはAdobe XDを使用して制作。</p>
+                    <p className="font-light my-1">このプロジェクトは大きく二つのセクションに分かれています。一つは元のWEBサイトの分析・批評、もう一つはそれをもとに改善したHigh Fidelity Prototypeの制作です。High Fidelity PrototypeはAdobe XDを使用して制作しました。</p>
                 </div>
 
-                <div className="pt-3">
+                <div>
                     <h3 className="text-xl my-1">分析</h3>
-                    <p className="font-light my-1">元の企業のWEBサイトをUXの観点から分析し、その分析結果を動画(英語)としてまとめました。実際のWEBページを映しながら説明している動画を以下の埋め込みからご覧いただけますが、要点は箇条書きでまとめてあります。</p>
-                    <iframe width="700" height="450" src="https://www.youtube.com/embed/n2YSkE3zRnA?si=FOtMDo_XevhvRsus" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
+                    <p className="font-light my-1">元の企業のWEBサイトをUXの観点から分析し、その分析結果を動画(英語)としてまとめました。以下の埋め込みからご覧いただけますが、動画内で話している内容の要点が箇条書きでまとめてあります。</p>
+                    <iframe width="600" height="400" src="https://www.youtube.com/embed/n2YSkE3zRnA?si=FOtMDo_XevhvRsus" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
                         className="my-1 mx-auto rounded-xl"
                     ></iframe>
                     <ul className="list-disc font-light text-md px-10 my-1">
@@ -74,8 +74,8 @@ export const projects = [
                 </div>
                 <div className="pt-3">
                     <h3 className="text-xl my-1">リデザイン</h3>
-                    <p className="font-light my-1">分析結果をもとに、WEB サイトをリデザインし、Adobe XDを使いHigh-Fidelity Prototypeを作成。プロトタイプから一部抜粋し、以下に要点を記載しておりますが、<a href='https://drive.google.com/file/d/1bs0umhorDjJpGd-R0DCK7-6tB_S-ZRk9/view?usp=sharing' target="_blank"
-                        className="underline font-bold hover:text-hoverColor"
+                    <p className="font-light my-1">分析結果をもとに、WEB サイトをリデザインし、Adobe XDを使いHigh-Fidelity Prototypeを作成しました。制作したプロトタイプから一部抜粋し、以下に要点を記載しておりますが、<a href='https://drive.google.com/file/d/1xuUbtdSGxsvGE1K3L1_l4rKZQ3I9vlhn/view?usp=sharing' target="_blank"
+                        className="underline font-bold hover:text-hoverColor inline-block"
                     >こちら
                         <BiLinkExternal className='inline-block' />
                     </a>から元のファイルもご覧いただけます。</p>
@@ -93,7 +93,7 @@ export const projects = [
         "genre": [0],
         "technology": ['Figma', 'Adobe Photoshop', 'Adobe Illustrator'],
         "thumbnail": 5,
-        "description": "食を共有するSNSというテーマに沿ってペルソナ設定からHigh-Fidelity Prototypeまで、UXにおける全行程を行ったグループプロジェクト。リサーチ、ペルソナ制作などから始め、Low-Fidelity Prototype、ユーザーテストを行い、最終的にHigh-Fidelity Prototypeを制作。",
+        "description": "食を共有するSNSというテーマに沿ってペルソナ設定からHigh-Fidelity Prototypeまで、UXにおける全行程を行ったグループプロジェクトです。リサーチ、ペルソナ制作などから始め、Low-Fidelity Prototype、ユーザーテストを行い、最終的にHigh-Fidelity Prototypeを制作しました。",
         tldr: [
             'ペルソナ制作やリサーチなどを行い、Low-Fidelity Prototypeを作成。',
             'ユーザーテストを行い、そのフィードバックをもとにHigh-Fidelity Prototypeを作成。',
@@ -105,7 +105,7 @@ export const projects = [
                     src={foodlyImage}
                     quality={100} priority={true} placeholder='blur'
                     alt="デザインの解説" />
-                <a href='https://drive.google.com/file/d/15RswYj7NskPutRm6c6w8tMc5mAnsiA-O/view?usp=sharing' target='_blank'
+                <a href='https://drive.google.com/file/d/1wKrAEC6mAOc9RtC8vTqzdPc0eX1Qh9oE/view?usp=sharing' target='_blank'
                     className='font-bold bg-offwhite text-highlight px-5 py-3 rounded-full 
                     w-fit mx-auto hover:text-offwhite hover:bg-highlight2 border-offwhite border-2 box-border'
                 >元ファイルはこちら
@@ -120,7 +120,7 @@ export const projects = [
         "genre": [1, 0],
         "technology": ['HTML', 'CSS', 'JavaScript'],
         "thumbnail": 2,
-        "description": "福岡のエステサロン、ESTICO様に依頼されてWEBサイトを制作。初のプロとしてのWEB開発の経験。ドメインの取得やサーバーのレンタルなども行う。また、これをきっかけにバックエンドへの興味が湧いたため、Next.jsなどのフレームワークを使ったフルスタックの開発の勉強を始める。",
+        "description": "福岡のエステサロン、ESTICO様に依頼されてWEBサイトを制作しました。初の有償でのWEB開発の経験でした。ドメインの取得やサーバーのレンタルなど、デザインからデプロイまでのすべての行程を行いました。また、これがきっかけでバックエンドへの興味が湧いたため、Next.jsなどのフレームワークを使ったフルスタックの開発の勉強を始めました。",
         tldr: [
             'HTMLやCSSなどの基礎的な技術を使ってWEBサイトを制作。',
             'ドメインの取得などのデプロイメントの作業を行う。',
@@ -143,7 +143,7 @@ export const projects = [
         "genre": [1],
         "technology": ['Blender', 'HTML', 'CSS', 'JavaScript'],
         "thumbnail": 4,
-        "description": "3Dソフトの使い方、またWEBサイト上でのアニメーションの有効的な使い方を勉強するためのプロジェクト。Blenderを使い制作した3Dアニメーションを、WEBサイトのランディングページとして使用。また、スクロールでアニメーションが再生されるように。",
+        "description": "3Dソフトの使い方、またWEBサイト上でのアニメーションの有効的な使い方を勉強するために自主的に作成したプロジェクトです。Blenderを使い制作した3Dアニメーションを、WEBサイトのランディングページとして使用しました。また、スクロールでアニメーションが再生されるように設定しました。",
         video: (<iframe width="800" height="500" src="https://www.youtube.com/embed/IRbMN4HnBFw?si=8ypV-RlGM9SbK4RI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>),
         page: (
             <article className="flex flex-col gap-5">
@@ -162,7 +162,7 @@ export const projects = [
         "genre": [2],
         "technology": ['Adobe Premiere Pro', 'Canon EOS 90D'],
         "thumbnail": 3,
-        "description": "映像のみで感情を伝えるというプロジェクト。効果音もセリフも使わずにしていかに感情を伝えるかが試された。このプロジェクトでは、「好奇心」という感情を選択。",
+        "description": "映像のみで感情を伝えるという大学のプロジェクトです。効果音もセリフも使わずにしていかに感情を伝えるかが試されました。私は「好奇心」という感情を伝えることを選択しました。",
         video: (<iframe width="800" height="500" src="https://www.youtube.com/embed/6fjE64XGk2k?si=dIrMZAvSBI-n5iQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>),
         tldr: [
             '同じ映像の間を調整することで展開をつくる。',
@@ -176,11 +176,11 @@ export const projects = [
         "genre": [1, 0],
         "technology": ['HTML', 'CSS', 'JavaScript', 'React', 'API'],
         "thumbnail": 2,
-        "description": "APIの使い方を勉強するために自主的に行ったプロジェクト。APIを使い天気情報、および背景の画像を取得し、表示。不確定要素が多い中でのユーザビリティを担保するための細かな工夫を凝らした。",
+        "description": "APIの使い方を勉強するために自主的に行ったプロジェクトです。APIを使い天気情報、および背景の画像を取得し、表示しております。不確定要素が多い中でのユーザビリティを担保するための細かな工夫を凝らしました。",
         video: (<iframe width="800" height="500" src="https://www.youtube.com/embed/OMIrPo8w_Zc?si=kiMfrXLHpkyfUThc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>),
         tldr: [
-            'Weather APIを使い天気情報を取得',
-            'Pexels APIを使い画像を取得',
+            'Weather APIを使い天気情報を取得。',
+            'Pexels APIを使い画像を取得。',
             '背景画像の色が不確定な中、可読性を担保するために様々な技術を使用。'
         ],
         page: (
@@ -200,10 +200,10 @@ export const projects = [
         "genre": [2, 3],
         "technology": ['Adobe Premiere Pro', 'Adobe After Effects'],
         "thumbnail": 4,
-        "description": '作編曲家として活動している友人と始めたプロジェクト。TikTokなどのショート動画のプラットフォームでJ-popやアニソンのカバー動画を投稿。動画編集、構成、ディレクションなどを担当。',
+        "description": '作編曲家として活動している友人と始めたプロジェクトです。TikTokなどのショート動画のプラットフォームでJ-popやアニソンのカバー動画を投稿していました。動画編集、構成、ディレクションなどを担当しました。',
         tldr: [
             'アルゴリズムによって高評価を受けるフォーマットを立案。',
-            'データをもとに、随時編集、構成などをアップデート',
+            'データをもとに、編集のスタイルや動画の構成などを随時アップデート。',
             '最高再生回数は約3万回再生を記録。'
         ],
         page: (
@@ -223,7 +223,7 @@ export const projects = [
         "genre": [2],
         "technology": ['Adobe Premiere Pro', 'Adobe After Effects'],
         "thumbnail": 2,
-        "description": "モーショングラフィックスをとおしてのストーリーテリング。明確なCall to Actionをいかに視聴者に伝えるのかという課題。縦長の画面比、尺も最大30秒という近年のトレンドであるショート動画のフォーマットで制作。",
+        "description": "モーショングラフィックスを使用したストーリーテリングを勉強するためのプロジェクト。明確なCall to Actionをいかに視聴者に伝えるかが試されました。近年のトレンドである縦長の画面比、30秒間というショート動画のフォーマットで制作しました。",
         video: (<iframe width="800" height="500" src="https://youtube.com/embed/Vf1FHaUaSik?si=KJUhXH9qKrKEu5yK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>)
     },
     {
@@ -232,7 +232,7 @@ export const projects = [
         "genre": [1],
         "technology": ['HTML', 'CSS', 'JavaScript', 'React', 'API'],
         "thumbnail": 2,
-        "description": "APIの使い方を勉強するために自主的に行ったプロジェクト。APIを使いLeague of Legends (Riot Games)というゲームのプレイヤー情報を取得し、その情報を処理して勝率やKDAなどの統計を算出。また、Riot Gamesが公開している画像ライブラリと組み合わせてキャラクターのアイコンなどを表示。",
+        "description": "APIの使い方を勉強するために自主的に行ったプロジェクトです。APIを使いLeague of Legends (Riot Games)というゲームのプレイヤー情報を取得し、その情報を処理して勝率やK/D/Aなどの統計を算出して表示しました。また、Riot Gamesが公開している画像ライブラリと組み合わせてキャラクターのアイコンなどを表示しました。",
         tldr: [
             'Riot Games APIを使い情報を取得。',
             '統計情報を算出し、表示。',
@@ -255,7 +255,7 @@ export const projects = [
         "genre": [0],
         "technology": [],
         "thumbnail": 3,
-        "description": "Makerspaceとはハイテクな機械やツール、工具など様々な道具が提供される施設。そのMakerspaceの利用者のペルソナを作成するというグループプロジェクト。",
+        "description": "Makerspaceとはハイテクな機械やツール、工具など様々な道具が提供される施設のことです。そのMakerspaceの利用者のペルソナを作成するという大学の授業で行ったグループプロジェクトです。",
         tldr: [
             'Makerspaceについてのリサーチを行う。',
             'リサーチをもとに3つの主なターゲット層を選出。',
@@ -265,7 +265,7 @@ export const projects = [
             <article className="flex flex-col gap-5">
                 <div className="pt-3">
                     <h3 className="text-xl my-1">リサーチ</h3>
-                    <p className="font-light my-1">ペルソナを制作するにあたり、Makerspace についてのリサーチを行う。以下の情報を収集。</p>
+                    <p className="font-light my-1">ペルソナを制作するにあたり、Makerspace についてのリサーチを行いました。その結果、以下の情報を収集できました。</p>
                     <ul className="list-disc font-light text-md px-10 my-1">
                         <li>Makerspace の定義、及び現状</li>
                         <li>デモグラフィック: 主なユーザーは中学生2, 3年生</li>
@@ -276,7 +276,7 @@ export const projects = [
                 </div>
                 <div className="pt-3">
                     <h3 className="text-xl my-1">ペルソナ制作</h3>
-                    <p className="font-light my-1">リサーチをもとに以下のペルソナを制作。</p>
+                    <p className="font-light my-1">前述したリサーチの結果をもとに以下のペルソナを制作しました。</p>
                     <Image src={'/projects/7/thumbnail_0.JPG'} width={750} height={700} />
                     <Image src={'/projects/7/thumbnail_1.JPG'} width={750} height={700} />
                     <Image src={'/projects/7/thumbnail_2.JPG'} width={750} height={700} />
@@ -290,7 +290,7 @@ export const projects = [
         "genre": [2],
         "technology": ['Adobe Premiere Pro', 'Adobe After Effects', 'Canon EOS 90D'],
         "thumbnail": 3,
-        "description": "アカデミアにおける生成AIについてのドキュメンタリーを制作するグループプロジェクト。企画、構成、インタビュー、撮影、編集などに携わる。",
+        "description": "アカデミアにおける生成AIについてのドキュメンタリーを制作したグループプロジェクトです。企画、構成、インタビュー、撮影、編集など、動画制作のすべてのプロセスに携わりました。",
         video: (<iframe width="800" height="500" src="https://www.youtube.com/embed/b5WpKXqgEQ0?si=p3TVd4NFpUZTAl3m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>)
     },
     {
@@ -299,7 +299,7 @@ export const projects = [
         "genre": [2],
         "technology": ['Adobe Premiere Pro', 'Adobe After Effects', 'Canon EOS 90D'],
         "thumbnail": 3,
-        "description": "カナダで鍼灸師をされている梶原さんのインタビューを行い、それをドキュメンタリーとして制作したプロジェクト。ストーリーボード制作やロケの手配、インタビューやディレクションなど、映像制作の一連の流れを経験。",
+        "description": "カナダで鍼灸師をされている日本人の梶原さんのドキュメンタリー動画を制作したプロジェクト。ストーリーボード制作やロケの手配、インタビューやディレクションなど、映像制作の一連の流れを学びました。",
         video: (<iframe width="800" height="500" src="https://www.youtube.com/embed/FP76l6hz51c?si=xd5IIwVcjkrzjDCb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>)
     },
     {
@@ -308,7 +308,7 @@ export const projects = [
         "genre": [0],
         "technology": [],
         "thumbnail": 1,
-        "description": "Motorola Razrというガラケーで使えるように現代のアプリをデザインをするというプロジェクト。PayPalのガラケーに適したデザインを考察し、Low-Fidelity Prototypeを制作。",
+        "description": "Motorola Razrというガラケーで使えるように現代のアプリをリデザインをするというプロジェクトです。世界中で使われている決済サービスのPayPalをガラケーでも使いやすいようにデザインを変更しました。また、リデザインのアイデアを元にLow-Fidelity Prototypeを制作しました。",
         tldr: [
             'スペーシングや箇条書きの使い方などの工夫でユーザビリティーを確保。',
             'ハードウェアを考慮し、矢印ボタンでも操作しやすいデザインに。',

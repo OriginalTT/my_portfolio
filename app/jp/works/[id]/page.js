@@ -31,7 +31,7 @@ const ProjectDescription = ({ params }) => {
     }
 
     return (
-        <main className='max-w-[800px] w-2/3 mx-auto my-10 flex flex-col gap-5 items-left'>
+        <main className='max-w-[700px] w-2/3 mx-auto my-10 flex flex-col gap-5 items-left'>
             <Link href={'/jp/works'} className='flex gap-3 items-center bg-offwhite text-highlight
             box-border border-2 border-offwhite
             w-fit px-5 py-3 rounded-full hover:bg-hoverColor hover:text-offwhite'>
@@ -114,7 +114,10 @@ const ProjectDescription = ({ params }) => {
                                                 </p>)
                                             })}
                                         </div>
-                                        <p className='text-sm font-extralight'>{project.description}</p>
+                                        <p
+                                            className='text-sm font-extralight line-clamp-6'>
+                                            {project.description}
+                                        </p>
                                     </div>
                                 </div>
                             </Link>
