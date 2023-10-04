@@ -38,7 +38,7 @@ const contact = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, ease: 'easeOut', delay: 0.5 }}
-                className="p-10 w-[300px] md:w-[500px] rounded-xl flex flex-col items-center gap-5 mx-10 my-10
+                className="p-10 w-11/12 md:w-[500px] rounded-xl flex flex-col items-center gap-5 mx-10 my-10
                 bg-highlight2"
                 ref={form} onSubmit={sendEmail}>
                 <p className='ml-auto text-xs text-red-400'>* 必須項目</p>
