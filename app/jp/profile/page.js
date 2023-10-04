@@ -1,8 +1,9 @@
 'use client';
 import { profileInfo } from './variables'
 import Image from 'next/image'
+import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { IoIosDocument } from 'react-icons/io';
+import { BsImageFill, BsFillPersonFill } from 'react-icons/bs';
 import profilePicture from '/public/portrait.webp';
 
 const profile = () => {
@@ -12,10 +13,10 @@ const profile = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, ease: 'easeInOut' }}>
-                <h1 className="font-bold text-9xl mt-[100px] z-50 drop-shadow-2xl">
+                <h1 className="font-bold text-4xl md:text-9xl mt-10 ml-5 md:mt-[100px] md:ml-0 z-50 drop-shadow-2xl">
                     {profileInfo.name}</h1>
-                <div className='flex gap-3 mt-10 z-40'>
-                    <div className='w-96'>
+                <div className='flex flex-col-reverse md:flex-row gap-3 mt-3 md:mt-10 w-11/12 max-w-screen-lg mx-auto'>
+                    <div>
                         <p className='font-light text-md'>{profileInfo.bio}</p>
                         <div className='flex my-3 gap-5'>
                             <div>
@@ -49,16 +50,25 @@ const profile = () => {
                                 </ul>
                             </div>
                         </div>
-                        <a
-                            className='flex items-center gap-1 py-3 px-5 
-                                bg-offwhite text-highlight rounded-full w-fit ml-auto mr-5 mt-10 box-border
-                                hover:bg-highlight2 hover:text-offwhite border-offwhite border-2'
-                            href={'https://drive.google.com/file/d/1R7JcxSxMEy6THsyqy0GOMDfhLk-iUYu9/view?usp=drive_link'}
-                            target='_blank'
-                        >
-                            <IoIosDocument />
-                            <p>レジュメ (英文)</p>
-                        </a>
+                        <div className='flex mt-10 gap-5'>
+                            <Link href={'/jp/works'}
+                                className='flex items-center gap-1 py-3 px-5 
+                            bg-offwhite text-highlight rounded-full w-fit box-border
+                            hover:bg-hoverColor hover:text-offwhite border-offwhite border-2' >
+                                <BsImageFill />
+                                <p>作品一覧</p>
+                            </Link>
+                            <a
+                                className='flex items-center gap-1 py-3 px-5 
+                            bg-highlight2 text-offwhite rounded-full w-fit box-border
+                            hover:bg-hoverColor hover:text-offwhite border-offwhite border-2'
+                                href='https://drive.google.com/file/d/1W1yM4qQQ34H6NpJm5j7Yg91f9hGNlvUI/view?usp=sharing'
+                                target='_blank'
+                            >
+                                <BsFillPersonFill />
+                                <p>履歴書</p>
+                            </a>
+                        </div>
                     </div>
                     <Image
                         quality={100} priority={true} placeholder='blur'

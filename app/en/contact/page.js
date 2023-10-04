@@ -29,7 +29,7 @@ const contact = () => {
     return (
         <main className='flex flex-col items-center'>
             <motion.h1
-                className="font-bold text-9xl mt-[100px]"
+                className="font-bold text-5xl mt-10 md:text-9xl md:mt-[100px]"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, ease: 'easeOut' }}
@@ -38,14 +38,14 @@ const contact = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, ease: 'easeOut', delay: 0.5 }}
-                className="p-10 w-[500px] rounded-xl flex flex-col items-center gap-5 mx-10 my-10
+                className="p-10 w-11/12 md:w-[500px] rounded-xl flex flex-col items-center gap-5 mx-10 my-10
                 bg-highlight2"
                 ref={form} onSubmit={sendEmail}>
                 <p className='ml-auto text-xs text-red-400'>* Required</p>
                 <div>
                     <label htmlFor="name">Name <span className='text-red-400'>*</span></label> <br />
                     <input
-                        className="bg-transparent p-2 border-offwhite border rounded-xl w-[400px]"
+                        className="bg-transparent p-2 border-offwhite border rounded-xl w-[250px] md:w-[400px]"
                         type="text" id="name" name="name" required
                         onChange={(e) => setName(e.target.value)} />
                 </div>
@@ -53,7 +53,7 @@ const contact = () => {
                 <div>
                     <label htmlFor="email">Email <span className='text-red-400'>*</span></label> <br />
                     <input
-                        className="bg-transparent p-2 border-offwhite border rounded-xl w-[400px]"
+                        className="bg-transparent p-2 border-offwhite border rounded-xl w-[250px] md:w-[400px] "
                         type="email" id="email" name="email" required
                         onChange={(e) => setEmail(e.target.value)} />
                 </div>
@@ -61,14 +61,14 @@ const contact = () => {
                 <div>
                     <label htmlFor="message">Message <span className='text-red-400'>*</span></label> <br />
                     <textarea
-                        className="bg-transparent p-2 border-offwhite border rounded-xl w-[400px]"
+                        className="bg-transparent p-2 border-offwhite border rounded-xl w-[250px] md:w-[400px] "
                         id="message" name="message" rows="4" required
                         onChange={(e) => setMessage(e.target.value)}></textarea>
                 </div>
 
                 <div>
                     <button type="submit" value={'Send'}
-                        className={`bg-offwhite text-highlight rounded-full px-5 py-3 drop-shadow-md ml-[300px]
+                        className={`bg-offwhite text-highlight rounded-full px-5 py-3 drop-shadow-md md:ml-[300px]
                         box-border border-2 border-offwhite disabled:opacity-30 disabled:cursor-not-allowed
                         ${!areFieldsFilled() ? '' : 'hover:text-offwhite hover:bg-highlight'}`}
                         disabled={!areFieldsFilled()}

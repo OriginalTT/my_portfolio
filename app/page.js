@@ -80,7 +80,7 @@ export default function Home() {
             transition={{ duration: 1, delay: 1, ease: 'easeInOut' }}>
             <h1
               onClick={handleEnIntro}
-              className="font-bold text-9xl mx-10 hover:text-hoverColor hover:cursor-pointer" >
+              className="font-bold text-4xl md:text-9xl mx-10 hover:text-hoverColor hover:cursor-pointer" >
               Hello! <MdNavigateNext className="inline" /></h1>
           </motion.div>
           <motion.div
@@ -89,7 +89,7 @@ export default function Home() {
             transition={{ duration: 1, delay: 1, ease: 'easeInOut' }}>
             <h1
               onClick={handleJpIntro}
-              className='font-bold text-9xl mx-10 hover:text-hoverColor hover:cursor-pointer'>
+              className='font-bold text-4xl md:text-9xl mx-10 hover:text-hoverColor hover:cursor-pointer'>
               こんにちは! <MdNavigateNext className="inline" />
             </h1>
           </motion.div>
@@ -99,19 +99,19 @@ export default function Home() {
           className='fixed top-[200px] pointer-events-none'>
           <h1
             ref={enIntroFirst}
-            className='font-bold text-9xl opacity-0 text-offwhite'
+            className='font-bold text-4xl md:text-9xl opacity-0 text-offwhite'
           >
             A Designer?
           </h1>
           <h1
             ref={enIntroSecond}
-            className='font-bold text-9xl opacity-0'
+            className='font-bold text-4xl md:text-9xl opacity-0'
           >
             Programmer?
           </h1>
           <h1
             ref={enIntroThird}
-            className='font-bold text-9xl opacity-0'
+            className='font-bold text-4xl md:text-9xl opacity-0'
           >
             No no, Both!
           </h1>
@@ -121,19 +121,19 @@ export default function Home() {
           className='fixed top-[200px] pointer-events-none'>
           <h1
             ref={jpIntroFirst}
-            className='font-bold text-9xl opacity-0 text-offwhite'
+            className='font-bold text-4xl md:text-9xl opacity-0 text-offwhite'
           >
             プログラム
           </h1>
           <h1
             ref={jpIntroSecond}
-            className='font-bold text-9xl opacity-0'
+            className='font-bold text-4xl md:text-9xl opacity-0'
           >
             が書ける
           </h1>
           <h1
             ref={jpIntroThird}
-            className='font-bold text-9xl opacity-0'
+            className='font-bold text-4xl md:text-9xl opacity-0'
           >
             デザイナー。
           </h1>
