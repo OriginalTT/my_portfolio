@@ -88,6 +88,29 @@ export const projects = [
         )
     },
     {
+        id: 12,
+        "title": "ESTICO ホームページ制作",
+        "genre": [1, 0],
+        "technology": ['HTML', 'CSS', 'JavaScript'],
+        "thumbnail": 2,
+        "description": "福岡のエステサロン、ESTICO様に依頼されてWEBサイトを制作しました。初の有償でのWEB開発の経験でした。ドメインの取得やサーバーのレンタルなど、デザインからデプロイまでのすべての行程を行いました。また、これがきっかけでバックエンドへの興味が湧いたため、Next.jsなどのフレームワークを使ったフルスタックの開発の勉強を始めました。",
+        tldr: [
+            'HTMLやCSSなどの基礎的な技術を使ってWEBサイトを制作。',
+            'ドメインの取得などのデプロイメントの作業を行う。',
+            '外部サービスを使い、Instagramなどとの連携を行う。'
+        ],
+        page: (
+            <article className="flex flex-col gap-5">
+                <a href='https://www.estico.net/index.html' target='_blank'
+                    className='font-bold bg-offwhite text-highlight px-5 py-3 rounded-full 
+                    w-fit mx-auto hover:text-offwhite hover:bg-highlight2 border-offwhite border-2 box-border'
+                >ホームページはこちら
+                    <BiLinkExternal className='inline-block' />
+                </a>
+            </article>
+        )
+    },
+    {
         id: 1,
         "title": "Foodly",
         "genre": [0],
@@ -109,29 +132,6 @@ export const projects = [
                     className='font-bold bg-offwhite text-highlight px-5 py-3 rounded-full 
                     w-fit mx-auto hover:text-offwhite hover:bg-highlight2 border-offwhite border-2 box-border'
                 >元ファイルはこちら
-                    <BiLinkExternal className='inline-block' />
-                </a>
-            </article>
-        )
-    },
-    {
-        id: 12,
-        "title": "ESTICO ホームページ制作",
-        "genre": [1, 0],
-        "technology": ['HTML', 'CSS', 'JavaScript'],
-        "thumbnail": 2,
-        "description": "福岡のエステサロン、ESTICO様に依頼されてWEBサイトを制作しました。初の有償でのWEB開発の経験でした。ドメインの取得やサーバーのレンタルなど、デザインからデプロイまでのすべての行程を行いました。また、これがきっかけでバックエンドへの興味が湧いたため、Next.jsなどのフレームワークを使ったフルスタックの開発の勉強を始めました。",
-        tldr: [
-            'HTMLやCSSなどの基礎的な技術を使ってWEBサイトを制作。',
-            'ドメインの取得などのデプロイメントの作業を行う。',
-            '外部サービスを使い、Instagramなどとの連携を行う。'
-        ],
-        page: (
-            <article className="flex flex-col gap-5">
-                <a href='https://www.estico.net/index.html' target='_blank'
-                    className='font-bold bg-offwhite text-highlight px-5 py-3 rounded-full 
-                    w-fit mx-auto hover:text-offwhite hover:bg-highlight2 border-offwhite border-2 box-border'
-                >ホームページはこちら
                     <BiLinkExternal className='inline-block' />
                 </a>
             </article>

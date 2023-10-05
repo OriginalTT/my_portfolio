@@ -89,6 +89,29 @@ export const projects = [
         )
     },
     {
+        id: 12,
+        "title": "ESTICO Website Creation",
+        "genre": [1, 0],
+        "technology": ['HTML', 'CSS', 'JavaScript'],
+        "thumbnail": 2,
+        "description": "Developed a website for ESTICO, an esthetic salon in Fukuoka, upon their request. This was my first experience as a professional web developer. I also took care of domain registration and server rental. Furthermore, this sparked my interest in the backend, prompting me to start learning about full-stack development using frameworks like Next.js.",
+        tldr: [
+            'Developed a website using foundational technologies like HTML and CSS.',
+            'Handled deployment tasks such as domain registration.',
+            'Integrated external services, establishing a link with platforms like Instagram.'
+        ],
+        page: (
+            <article className="flex flex-col gap-5">
+                <a href='https://www.estico.net/index.html' target='_blank'
+                    className='font-bold bg-offwhite text-highlight px-5 py-3 rounded-full 
+                    w-fit mx-auto hover:text-offwhite hover:bg-highlight2 border-offwhite border-2 box-border'
+                >Visit the website
+                    <BiLinkExternal className='inline-block' />
+                </a>
+            </article>
+        )
+    },
+    {
         id: 1,
         "title": "Foodly",
         "genre": [0],
@@ -110,29 +133,6 @@ export const projects = [
                     className='font-bold bg-offwhite text-highlight px-5 py-3 rounded-full 
                     w-fit mx-auto hover:text-offwhite hover:bg-highlight2 border-offwhite border-2 box-border'
                 >See the original file here
-                    <BiLinkExternal className='inline-block' />
-                </a>
-            </article>
-        )
-    },
-    {
-        id: 12,
-        "title": "ESTICO Website Creation",
-        "genre": [1, 0],
-        "technology": ['HTML', 'CSS', 'JavaScript'],
-        "thumbnail": 2,
-        "description": "Developed a website for ESTICO, an esthetic salon in Fukuoka, upon their request. This was my first experience as a professional web developer. I also took care of domain registration and server rental. Furthermore, this sparked my interest in the backend, prompting me to start learning about full-stack development using frameworks like Next.js.",
-        tldr: [
-            'Developed a website using foundational technologies like HTML and CSS.',
-            'Handled deployment tasks such as domain registration.',
-            'Integrated external services, establishing a link with platforms like Instagram.'
-        ],
-        page: (
-            <article className="flex flex-col gap-5">
-                <a href='https://www.estico.net/index.html' target='_blank'
-                    className='font-bold bg-offwhite text-highlight px-5 py-3 rounded-full 
-                    w-fit mx-auto hover:text-offwhite hover:bg-highlight2 border-offwhite border-2 box-border'
-                >Visit the website
                     <BiLinkExternal className='inline-block' />
                 </a>
             </article>
