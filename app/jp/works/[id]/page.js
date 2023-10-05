@@ -61,9 +61,9 @@ const ProjectDescription = ({ params }) => {
                 </div>
             }
             <h1 className='text-3xl'>{project.title}</h1>
-            <div className='flex gap-8 justify-between'>
-                <p className=' font-light flex-2'>{project.description}</p>
-                <div className='flex-1 min-w-[200px]'>
+            <div className='flex gap-5 justify-between'>
+                <p className=' font-light '>{project.description}</p>
+                <div className='min-w-[200px]'>
                     <h3>使用技術</h3>
                     <ul className='list-disc'>
                         {project.technology.length === 0 ?
