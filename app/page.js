@@ -78,20 +78,20 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1, ease: 'easeInOut' }}>
-            <h1
+            <h2
               onClick={handleEnIntro}
               className="font-bold text-4xl md:text-9xl mx-10 hover:text-hoverColor hover:cursor-pointer" >
-              Hello! <MdNavigateNext className="inline" /></h1>
+              Hello! <MdNavigateNext className="inline" /></h2>
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1, ease: 'easeInOut' }}>
-            <h1
+            <h2
               onClick={handleJpIntro}
               className='font-bold text-4xl md:text-9xl mx-10 hover:text-hoverColor hover:cursor-pointer'>
               こんにちは! <MdNavigateNext className="inline" />
-            </h1>
+            </h2>
           </motion.div>
         </div>
         <div
