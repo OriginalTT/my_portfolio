@@ -15,7 +15,7 @@ export const projects = [
         id: 0,
         "title": "Watami Sushi",
         "genre": [0],
-        "technology": ['Adobe XD', 'Adobe Photoshop', 'Adobe Illustrator'],
+        "technology": ['Adobe XD', 'Photoshop', 'Illustrator'],
         "thumbnail": 4,
         "description": "This project was part of a university course where we analyzed and redesigned the website of a local business. We worked on improving the website for Watami Sushi, a sushi restaurant located in Waterloo, Canada.",
         tldr: [
@@ -114,7 +114,7 @@ export const projects = [
         id: 1,
         "title": "Foodly",
         "genre": [0],
-        "technology": ['Figma', 'Adobe Photoshop', 'Adobe Illustrator'],
+        "technology": ['Figma', 'Photoshop', 'Illustrator'],
         "thumbnail": 5,
         "description": "A group project to create a high-fidelity prototype of a social media for sharing food, covering the entire UX process from persona creation to the high-fidelity prototype. We began with research, persona creation, etc., went on to produce the Low-Fidelity Prototype, conducted user tests, and finally produced the high-fidelity prototype.",
         tldr: [
@@ -160,7 +160,7 @@ export const projects = [
         id: 2,
         "title": "Curiosity",
         "genre": [2],
-        "technology": ['Adobe Premiere Pro', 'Canon EOS 90D'],
+        "technology": ['Premiere Pro', 'Canon EOS 90D'],
         "thumbnail": 3,
         "description": "A project that conveys emotions solely through visuals. The challenge was to communicate feelings without using sound effects or dialogue. In this project, the emotion of 'curiosity' was chosen.",
         video: (<iframe width="700" height="500" src="https://www.youtube.com/embed/6fjE64XGk2k?si=dIrMZAvSBI-n5iQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>),
@@ -198,7 +198,7 @@ export const projects = [
         id: 3,
         "title": "Alto 2 Go",
         "genre": [2, 3],
-        "technology": ['Adobe Premiere Pro', 'Adobe After Effects'],
+        "technology": ['Premiere Pro', 'After Effects'],
         "thumbnail": 4,
         "description": "A project started with a friend who is active as a composer and arranger. Posts cover videos of J-pop and anime songs on short video platforms such as TikTok. Responsible for video editing, composition, and direction.",
         tldr: [
@@ -221,7 +221,7 @@ export const projects = [
         id: 6,
         "title": "Let's Drink More Coffee!",
         "genre": [2],
-        "technology": ['Adobe Premiere Pro', 'Adobe After Effects'],
+        "technology": ['Premiere Pro', 'After Effects'],
         "thumbnail": 2,
         "description": "Storytelling through motion graphics. The challenge is how to convey a clear Call to Action to viewers. Produced in a short video format that is a recent trend, with a tall screen ratio and a maximum duration of 30 seconds.",
         video: (<iframe width="700" height="500" src="https://youtube.com/embed/Vf1FHaUaSik?si=KJUhXH9qKrKEu5yK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>)
@@ -288,7 +288,7 @@ export const projects = [
         id: 9,
         "title": "RoboRenaissance: Exploring the Technology Behind Conversational AI",
         "genre": [2],
-        "technology": ['Adobe Premiere Pro', 'Adobe After Effects', 'Canon EOS 90D'],
+        "technology": ['Premiere Pro', 'After Effects', 'Canon EOS 90D'],
         "thumbnail": 3,
         "description": "A group project to produce a documentary on generative AI in academia. Involved in planning, structuring, interviewing, filming, and editing.",
         video: (<iframe width="700" height="500" src="https://www.youtube.com/embed/b5WpKXqgEQ0?si=p3TVd4NFpUZTAl3m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>)
@@ -297,7 +297,7 @@ export const projects = [
         id: 8,
         "title": "How I became Shiori Kajiwara",
         "genre": [2],
-        "technology": ['Adobe Premiere Pro', 'Adobe After Effects', 'Canon EOS 90D'],
+        "technology": ['Premiere Pro', 'After Effects', 'Canon EOS 90D'],
         "thumbnail": 3,
         "description": "A project where I interviewed Ms. Kajiwara, an acupuncturist in Canada, and produced it as a documentary. Experienced the entire process of video production, including creating storyboards, arranging locations, conducting interviews, and directing.",
         video: (<iframe width="700" height="500" src="https://www.youtube.com/embed/FP76l6hz51c?si=xd5IIwVcjkrzjDCb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>)

@@ -15,7 +15,7 @@ export const projects = [
         id: 0,
         "title": "Watami Sushi",
         "genre": [0],
-        "technology": ['Adobe XD', 'Adobe Photoshop', 'Adobe Illustrator'],
+        "technology": ['Adobe XD', 'Photoshop', 'Illustrator'],
         "thumbnail": 4,
         "description": "ローカル企業のWEB サイトを分析、そしてリデザインするという大学の授業の一環で行ったプロジェクトです。Watami Sushiというカナダ、ウォータールーに実際にある寿司屋のWEBサイトの改善を行いました。",
         tldr: [
@@ -114,7 +114,7 @@ export const projects = [
         id: 1,
         "title": "Foodly",
         "genre": [0],
-        "technology": ['Figma', 'Adobe Photoshop', 'Adobe Illustrator'],
+        "technology": ['Figma', 'Photoshop', 'Illustrator'],
         "thumbnail": 5,
         "description": "食を共有するSNSというテーマに沿ってペルソナ設定からHigh-Fidelity Prototypeまで、UXにおける全行程を行ったグループプロジェクトです。リサーチ、ペルソナ制作などから始め、Low-Fidelity Prototype、ユーザーテストを行い、最終的にHigh-Fidelity Prototypeを制作しました。",
         tldr: [
@@ -160,7 +160,7 @@ export const projects = [
         id: 2,
         "title": "Curiosity",
         "genre": [2],
-        "technology": ['Adobe Premiere Pro', 'Canon EOS 90D'],
+        "technology": ['Premiere Pro', 'Canon EOS 90D'],
         "thumbnail": 3,
         "description": "映像のみで感情を伝えるという大学のプロジェクトです。効果音もセリフも使わずにしていかに感情を伝えるかが試されました。私は「好奇心」という感情を伝えることを選択しました。",
         video: (<iframe width="700" height="500" src="https://www.youtube.com/embed/6fjE64XGk2k?si=dIrMZAvSBI-n5iQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>),
@@ -198,7 +198,7 @@ export const projects = [
         id: 3,
         "title": "アルト2号",
         "genre": [2, 3],
-        "technology": ['Adobe Premiere Pro', 'Adobe After Effects'],
+        "technology": ['Premiere Pro', 'After Effects'],
         "thumbnail": 4,
         "description": '作編曲家として活動している友人と始めたプロジェクトです。TikTokなどのショート動画のプラットフォームでJ-popやアニソンのカバー動画を投稿していました。動画編集、構成、ディレクションなどを担当しました。',
         tldr: [
@@ -221,7 +221,7 @@ export const projects = [
         id: 6,
         "title": "Let's Drink More Coffee!",
         "genre": [2],
-        "technology": ['Adobe Premiere Pro', 'Adobe After Effects'],
+        "technology": ['Premiere Pro', 'After Effects'],
         "thumbnail": 2,
         "description": "モーショングラフィックスを使用したストーリーテリングを勉強するためのプロジェクト。明確なCall to Actionをいかに視聴者に伝えるかが試されました。近年のトレンドである縦長の画面比、30秒間というショート動画のフォーマットで制作しました。",
         video: (<iframe width="700" height="500" src="https://youtube.com/embed/Vf1FHaUaSik?si=KJUhXH9qKrKEu5yK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>)
@@ -288,7 +288,7 @@ export const projects = [
         id: 9,
         "title": "RoboRenaissance: Exploring the Technology Behind Conversational AI",
         "genre": [2],
-        "technology": ['Adobe Premiere Pro', 'Adobe After Effects', 'Canon EOS 90D'],
+        "technology": ['Premiere Pro', 'After Effects', 'Canon EOS 90D'],
         "thumbnail": 3,
         "description": "アカデミアにおける生成AIについてのドキュメンタリーを制作したグループプロジェクトです。企画、構成、インタビュー、撮影、編集など、動画制作のすべてのプロセスに携わりました。",
         video: (<iframe width="700" height="500" src="https://www.youtube.com/embed/b5WpKXqgEQ0?si=p3TVd4NFpUZTAl3m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>)
@@ -297,7 +297,7 @@ export const projects = [
         id: 8,
         "title": "How I became Shiori Kajiwara",
         "genre": [2],
-        "technology": ['Adobe Premiere Pro', 'Adobe After Effects', 'Canon EOS 90D'],
+        "technology": ['Premiere Pro', 'After Effects', 'Canon EOS 90D'],
         "thumbnail": 3,
         "description": "カナダで鍼灸師をされている日本人の梶原さんのドキュメンタリー動画を制作したプロジェクト。ストーリーボード制作やロケの手配、インタビューやディレクションなど、映像制作の一連の流れを学びました。",
         video: (<iframe width="700" height="500" src="https://www.youtube.com/embed/FP76l6hz51c?si=xd5IIwVcjkrzjDCb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>)
