@@ -31,7 +31,7 @@ const ProjectDescription = ({ params }) => {
     }
 
     return (
-        <main className='max-w-[800px] w-2/3 mx-auto my-10 flex flex-col gap-5 items-left'>
+        <main className='max-w-[700px] w-2/3 mx-auto my-10 flex flex-col gap-5 items-left'>
             <Link href={'/en/works'} className='flex gap-3 items-center bg-offwhite text-highlight
             box-border border-2 border-offwhite
             w-fit px-5 py-3 rounded-full hover:bg-hoverColor hover:text-offwhite'>
@@ -48,7 +48,7 @@ const ProjectDescription = ({ params }) => {
                     <div>
                         <Image
                             width={600} height={350}
-                            className='rounded-xl  z-50 w-[800px] h-[500px]'
+                            className='rounded-xl z-50 w-[800px] h-[500px]'
                             src={`/projects/${project.id}/thumbnail_${thumbnailId}.JPG`}
                             style={{ objectFit: "contain" }}
                             alt='Image' />
@@ -63,11 +63,11 @@ const ProjectDescription = ({ params }) => {
             <h1 className='text-3xl'>{project.title}</h1>
             <div className='flex gap-5 justify-between'>
                 <p className=' font-light '>{project.description}</p>
-                <div className='min-w-[200px]'>
+                <div className='max-w-[200px]'>
                     <h3>Tech Used</h3>
                     <ul className='list-disc'>
                         {project.technology.length === 0 ?
-                            <li className='ml-7 font-light'>なし</li> :
+                            <li className='ml-7 font-light'>None</li> :
                             project.technology.map((name, index) => {
                                 return (<li key={index} className='ml-7 font-light'>
                                     {name}
@@ -114,7 +114,7 @@ const ProjectDescription = ({ params }) => {
                                                 </p>)
                                             })}
                                         </div>
-                                        <p className='text-sm font-extralight'>{project.description}</p>
+                                        <p className='text-sm font-extralight line-clamp-6'>{project.description}</p>
                                     </div>
                                 </div>
                             </Link>

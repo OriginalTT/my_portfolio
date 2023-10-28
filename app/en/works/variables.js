@@ -32,11 +32,11 @@ export const projects = [
 
                 <div className="pt-3">
                     <h3 className="text-xl my-1">Analysis</h3>
-                    <p className="font-light my-1">We analyzed the original company website from a UX perspective and summarized the analysis results in a video. You can watch the video where I explain with the actual webpage embedded below. The main points are also summarized in bullet points.</p>
+                    <p className="font-light my-1">I analyzed the original company website from a UX perspective and summarized the analysis results in a video. The analasys was done using frameworks such as Jakob's 10 Usability Heuristics, focusing on whether the design is user-centered. The video is produced in a way that simulates actual interaction with a client, where I explain all flaws and problems with logical reasonings within the small timeframe.</p>
                     <iframe width="700" height="450" src="https://www.youtube.com/embed/n2YSkE3zRnA?si=FOtMDo_XevhvRsus" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
-                        className="my-1 mx-auto rounded-xl"
+                        className="mt-5 mx-auto w-full rounded-xl"
                     ></iframe>
-                    <ul className="list-disc font-light text-md px-10 my-1">
+                    {/* <ul className="list-disc font-light text-md px-10 my-1 line-clamp-6 hover:line-clamp-none text-gradient-to-b from-[rgba(0,0,0,0)] to-highlight">
                         <li className='my-1'>
                             Due to insufficient contrast between the background image and the text on top of it, the most important message on the landing page, "Welcome", is hard to read. Adding a drop shadow, for instance, would improve readability.
                         </li>
@@ -70,13 +70,12 @@ export const projects = [
                         <li className='my-1'>
                             There is no clear "Call to Action", so even after viewing the website, it's unlikely that user behavior will change.
                         </li>
-                    </ul>
-
+                    </ul> */}
                 </div>
                 <div className="pt-3">
                     <h3 className="text-xl my-1">Redesign</h3>
                     <p className="font-light my-1">Based on the analysis, we redesigned the website and created a High-Fidelity Prototype using Adobe XD. Some excerpts from the prototype are listed below, but you can also view the original file from <a href='https://drive.google.com/file/d/1bs0umhorDjJpGd-R0DCK7-6tB_S-ZRk9/view?usp=sharing' target="_blank"
-                        className="underline font-bold hover:text-purple-200"
+                        className="underline font-bold hover:text-hoverColor inline-block"
                     >here
                         <BiLinkExternal className='inline-block' />
                     </a>.</p>
@@ -145,7 +144,7 @@ export const projects = [
         "technology": ['Blender', 'HTML', 'CSS', 'JavaScript'],
         "thumbnail": 4,
         "description": "A project to study the usage of 3D software and the effective use of animations on websites. I used Blender to create a 3D animation and used it as a landing page for the website. The animation also plays when scrolled.",
-        video: (<iframe width="800" height="500" src="https://www.youtube.com/embed/IRbMN4HnBFw?si=8ypV-RlGM9SbK4RI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>),
+        video: (<iframe width="700" height="500" src="https://www.youtube.com/embed/IRbMN4HnBFw?si=8ypV-RlGM9SbK4RI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>),
         page: (
             <article className="flex flex-col gap-5">
                 <a href='https://github.com/OriginalTT/ball_tube' target='_blank'
@@ -164,7 +163,7 @@ export const projects = [
         "technology": ['Adobe Premiere Pro', 'Canon EOS 90D'],
         "thumbnail": 3,
         "description": "A project that conveys emotions solely through visuals. The challenge was to communicate feelings without using sound effects or dialogue. In this project, the emotion of 'curiosity' was chosen.",
-        video: (<iframe width="800" height="500" src="https://www.youtube.com/embed/6fjE64XGk2k?si=dIrMZAvSBI-n5iQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>),
+        video: (<iframe width="700" height="500" src="https://www.youtube.com/embed/6fjE64XGk2k?si=dIrMZAvSBI-n5iQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>),
         tldr: [
             'Create development by adjusting the same visuals.',
             'Make impressions by using color pinpointedly.',
@@ -178,7 +177,7 @@ export const projects = [
         "technology": ['HTML', 'CSS', 'JavaScript', 'React', 'API'],
         "thumbnail": 2,
         "description": "A project undertaken voluntarily to study the usage of APIs. The app fetches and displays weather information and background images using APIs. A lot of intricate details were incorporated to ensure user usability amidst many uncertain elements.",
-        video: (<iframe width="800" height="500" src="https://www.youtube.com/embed/OMIrPo8w_Zc?si=kiMfrXLHpkyfUThc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>),
+        video: (<iframe width="700" height="500" src="https://www.youtube.com/embed/OMIrPo8w_Zc?si=kiMfrXLHpkyfUThc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>),
         tldr: [
             'Used Weather API to fetch weather information.',
             'Used Pexels API to obtain images.',
@@ -225,7 +224,7 @@ export const projects = [
         "technology": ['Adobe Premiere Pro', 'Adobe After Effects'],
         "thumbnail": 2,
         "description": "Storytelling through motion graphics. The challenge is how to convey a clear Call to Action to viewers. Produced in a short video format that is a recent trend, with a tall screen ratio and a maximum duration of 30 seconds.",
-        video: (<iframe width="800" height="500" src="https://youtube.com/embed/Vf1FHaUaSik?si=KJUhXH9qKrKEu5yK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>)
+        video: (<iframe width="700" height="500" src="https://youtube.com/embed/Vf1FHaUaSik?si=KJUhXH9qKrKEu5yK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>)
     },
     {
         id: 5,
@@ -292,7 +291,7 @@ export const projects = [
         "technology": ['Adobe Premiere Pro', 'Adobe After Effects', 'Canon EOS 90D'],
         "thumbnail": 3,
         "description": "A group project to produce a documentary on generative AI in academia. Involved in planning, structuring, interviewing, filming, and editing.",
-        video: (<iframe width="800" height="500" src="https://www.youtube.com/embed/b5WpKXqgEQ0?si=p3TVd4NFpUZTAl3m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>)
+        video: (<iframe width="700" height="500" src="https://www.youtube.com/embed/b5WpKXqgEQ0?si=p3TVd4NFpUZTAl3m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>)
     },
     {
         id: 8,
@@ -301,7 +300,7 @@ export const projects = [
         "technology": ['Adobe Premiere Pro', 'Adobe After Effects', 'Canon EOS 90D'],
         "thumbnail": 3,
         "description": "A project where I interviewed Ms. Kajiwara, an acupuncturist in Canada, and produced it as a documentary. Experienced the entire process of video production, including creating storyboards, arranging locations, conducting interviews, and directing.",
-        video: (<iframe width="800" height="500" src="https://www.youtube.com/embed/FP76l6hz51c?si=xd5IIwVcjkrzjDCb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>)
+        video: (<iframe width="700" height="500" src="https://www.youtube.com/embed/FP76l6hz51c?si=xd5IIwVcjkrzjDCb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>)
     },
     {
         id: 11,

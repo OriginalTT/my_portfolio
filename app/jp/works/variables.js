@@ -32,11 +32,11 @@ export const projects = [
 
                 <div>
                     <h3 className="text-xl my-1">分析</h3>
-                    <p className="font-light my-1">元の企業のWEBサイトをUXの観点から分析し、その分析結果を動画(英語)としてまとめました。以下の埋め込みからご覧いただけますが、動画内で話している内容の要点が箇条書きでまとめてあります。</p>
+                    <p className="font-light my-1">元の企業のWEBサイトをUXの観点から分析し、その分析結果を動画(英語)としてまとめました。ヤコブの10ユーザビリティヒューリスティックスなどのフレームワークを用いた分析を行い、特にユーザーファーストのデザインかという視点から批評いたしました。また、動画は実際のクライアントに説明するような形式で制作しており、短時間で理由と共に問題点を挙げていくというフォーマットにしております。</p>
                     <iframe width="600" height="400" src="https://www.youtube.com/embed/n2YSkE3zRnA?si=FOtMDo_XevhvRsus" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
-                        className="my-1 mx-auto rounded-xl"
+                        className="mt-5 mx-auto w-full rounded-xl"
                     ></iframe>
-                    <ul className="list-disc font-light text-md px-10 my-1">
+                    {/* <ul className="list-disc font-light text-md px-10 my-1">
                         <li className='my-1'>
                             背景画像とその上の文字のコントラストが不十分なため、ランディングページの一番重要な「Welcome」というメッセージが読みにくい。ドロップシャドウなどをつけることによって可読性を向上させるべき。
                         </li>
@@ -70,9 +70,9 @@ export const projects = [
                         <li className='my-1'>
                             Call To Actionが特になく、このWEB サイトを見てもユーザーの行動が変わることは期待できない。
                         </li>
-                    </ul>
+                    </ul> */}
                 </div>
-                <div className="pt-3">
+                <div className="mt-3">
                     <h3 className="text-xl my-1">リデザイン</h3>
                     <p className="font-light my-1">分析結果をもとに、WEB サイトをリデザインし、Adobe XDを使いHigh-Fidelity Prototypeを作成しました。制作したプロトタイプから一部抜粋し、以下に要点を記載しておりますが、<a href='https://drive.google.com/file/d/1xuUbtdSGxsvGE1K3L1_l4rKZQ3I9vlhn/view?usp=sharing' target="_blank"
                         className="underline font-bold hover:text-hoverColor inline-block"
@@ -144,7 +144,7 @@ export const projects = [
         "technology": ['Blender', 'HTML', 'CSS', 'JavaScript'],
         "thumbnail": 4,
         "description": "3Dソフトの使い方、またWEBサイト上でのアニメーションの有効的な使い方を勉強するために自主的に作成したプロジェクトです。Blenderを使い制作した3Dアニメーションを、WEBサイトのランディングページとして使用しました。また、スクロールでアニメーションが再生されるように設定しました。",
-        video: (<iframe width="800" height="500" src="https://www.youtube.com/embed/IRbMN4HnBFw?si=8ypV-RlGM9SbK4RI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>),
+        video: (<iframe width="700" height="500" src="https://www.youtube.com/embed/IRbMN4HnBFw?si=8ypV-RlGM9SbK4RI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>),
         page: (
             <article className="flex flex-col gap-5">
                 <a href='https://github.com/OriginalTT/ball_tube' target='_blank'
@@ -163,7 +163,7 @@ export const projects = [
         "technology": ['Adobe Premiere Pro', 'Canon EOS 90D'],
         "thumbnail": 3,
         "description": "映像のみで感情を伝えるという大学のプロジェクトです。効果音もセリフも使わずにしていかに感情を伝えるかが試されました。私は「好奇心」という感情を伝えることを選択しました。",
-        video: (<iframe width="800" height="500" src="https://www.youtube.com/embed/6fjE64XGk2k?si=dIrMZAvSBI-n5iQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>),
+        video: (<iframe width="700" height="500" src="https://www.youtube.com/embed/6fjE64XGk2k?si=dIrMZAvSBI-n5iQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>),
         tldr: [
             '同じ映像の間を調整することで展開をつくる。',
             'ピンポイントで色を使うことによって、印象ずける。',
@@ -177,7 +177,7 @@ export const projects = [
         "technology": ['HTML', 'CSS', 'JavaScript', 'React', 'API'],
         "thumbnail": 2,
         "description": "APIの使い方を勉強するために自主的に行ったプロジェクトです。APIを使い天気情報、および背景の画像を取得し、表示しております。不確定要素が多い中でのユーザビリティを担保するための細かな工夫を凝らしました。",
-        video: (<iframe width="800" height="500" src="https://www.youtube.com/embed/OMIrPo8w_Zc?si=kiMfrXLHpkyfUThc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>),
+        video: (<iframe width="700" height="500" src="https://www.youtube.com/embed/OMIrPo8w_Zc?si=kiMfrXLHpkyfUThc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>),
         tldr: [
             'Weather APIを使い天気情報を取得。',
             'Pexels APIを使い画像を取得。',
@@ -224,7 +224,7 @@ export const projects = [
         "technology": ['Adobe Premiere Pro', 'Adobe After Effects'],
         "thumbnail": 2,
         "description": "モーショングラフィックスを使用したストーリーテリングを勉強するためのプロジェクト。明確なCall to Actionをいかに視聴者に伝えるかが試されました。近年のトレンドである縦長の画面比、30秒間というショート動画のフォーマットで制作しました。",
-        video: (<iframe width="800" height="500" src="https://youtube.com/embed/Vf1FHaUaSik?si=KJUhXH9qKrKEu5yK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>)
+        video: (<iframe width="700" height="500" src="https://youtube.com/embed/Vf1FHaUaSik?si=KJUhXH9qKrKEu5yK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>)
     },
     {
         id: 5,
@@ -291,7 +291,7 @@ export const projects = [
         "technology": ['Adobe Premiere Pro', 'Adobe After Effects', 'Canon EOS 90D'],
         "thumbnail": 3,
         "description": "アカデミアにおける生成AIについてのドキュメンタリーを制作したグループプロジェクトです。企画、構成、インタビュー、撮影、編集など、動画制作のすべてのプロセスに携わりました。",
-        video: (<iframe width="800" height="500" src="https://www.youtube.com/embed/b5WpKXqgEQ0?si=p3TVd4NFpUZTAl3m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>)
+        video: (<iframe width="700" height="500" src="https://www.youtube.com/embed/b5WpKXqgEQ0?si=p3TVd4NFpUZTAl3m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>)
     },
     {
         id: 8,
@@ -300,7 +300,7 @@ export const projects = [
         "technology": ['Adobe Premiere Pro', 'Adobe After Effects', 'Canon EOS 90D'],
         "thumbnail": 3,
         "description": "カナダで鍼灸師をされている日本人の梶原さんのドキュメンタリー動画を制作したプロジェクト。ストーリーボード制作やロケの手配、インタビューやディレクションなど、映像制作の一連の流れを学びました。",
-        video: (<iframe width="800" height="500" src="https://www.youtube.com/embed/FP76l6hz51c?si=xd5IIwVcjkrzjDCb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>)
+        video: (<iframe width="700" height="500" src="https://www.youtube.com/embed/FP76l6hz51c?si=xd5IIwVcjkrzjDCb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>)
     },
     {
         id: 11,

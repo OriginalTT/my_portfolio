@@ -48,7 +48,7 @@ const ProjectDescription = ({ params }) => {
                     <div>
                         <Image
                             width={600} height={350}
-                            className='rounded-xl rounded-  z-50 w-[800px] h-[500px]'
+                            className='rounded-xl z-50 w-[800px] h-[500px]'
                             src={`/projects/${project.id}/thumbnail_${thumbnailId}.JPG`}
                             style={{ objectFit: "contain" }}
                             alt='Image' />
@@ -63,7 +63,7 @@ const ProjectDescription = ({ params }) => {
             <h1 className='text-3xl'>{project.title}</h1>
             <div className='flex gap-5 justify-between'>
                 <p className=' font-light '>{project.description}</p>
-                <div className='min-w-[200px]'>
+                <div className='max-w-[200px]'>
                     <h3>使用技術</h3>
                     <ul className='list-disc'>
                         {project.technology.length === 0 ?
