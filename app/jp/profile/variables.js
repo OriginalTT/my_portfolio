@@ -6,7 +6,6 @@ export const profileInfo = {
         'UX デザイン',
         'フロントエンド開発',
         '動画制作',
-        'グラフィックデザイン',
     ],
     languages: [
         '日本語',

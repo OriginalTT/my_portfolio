@@ -13,10 +13,10 @@ const profile = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, ease: 'easeInOut' }}>
-                <h1 className="font-bold text-4xl md:text-9xl mt-10 ml-5 md:mt-[100px] md:ml-0 z-50 drop-shadow-2xl">
+                <h1 className="font-bold text-4xl md:text-8xl mt-10 ml-5 md:mt-[100px] md:ml-0 z-50 drop-shadow-2xl">
                     {profileInfo.name}</h1>
-                <div className='flex flex-col-reverse md:flex-row gap-3 mt-3 md:mt-10 w-11/12 md:w-fit max-w-screen-lg mx-auto'>
-                    <div className='md:w-[350px]'>
+                <div className='flex flex-col-reverse md:flex-row gap-5 mt-3 w-11/12 md:w-fit max-w-screen-lg mx-auto'>
+                    <div className='md:w-[400px]'>
                         <p className='font-light text-md'>{profileInfo.bio}</p>
                         <div className='flex my-3 gap-5'>
                             <div>
@@ -50,7 +50,7 @@ const profile = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className='flex mt-10 gap-5'>
+                        <div className='flex mt-5 gap-5'>
                             <Link href={'/jp/works'}
                                 className='flex items-center gap-1 py-3 px-5 
                             bg-offwhite text-highlight rounded-full w-fit box-border
@@ -72,9 +72,9 @@ const profile = () => {
                     </div>
                     <Image
                         quality={100} priority={true} placeholder='blur'
-                        src={profilePicture} width={500} height={500}
+                        src={profilePicture} width={300} height={300}
                         alt="久保天太朗のプロフィール画像"
-                        className='rounded-2xl' />
+                        className='rounded-2xl w-[300px] h-[300px] mx-auto' />
                 </div >
             </motion.section>
         </main >
