@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Works = () => {
     return (
-        <main className='min-h-[70vh] flex items-center justify-center px-6 py-20'>
+        <main className='min-h-[70vh] flex items-center justify-center px-6 py-20 text-offblack'>
             <section className='max-w-[680px] text-center'>
                 <p className='text-sm font-light uppercase tracking-[0.2em] text-hoverColor'>
                     Works
