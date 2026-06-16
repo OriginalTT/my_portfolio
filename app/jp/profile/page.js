@@ -16,7 +16,7 @@ const profile = () => {
                     {profileInfo.name}</h1>
                 <div className='mt-8 flex flex-col-reverse gap-8 md:flex-row md:items-start md:justify-between lg:gap-12'>
                     <div className='w-full md:max-w-[620px]'>
-                        <p className='text-base font-light leading-8'>{profileInfo.bio}</p>
+                        <p className='text-base font-light leading-7'>{profileInfo.bio}</p>
                         <div className='my-8 grid grid-cols-1 gap-5 sm:grid-cols-3'>
                             <div>
                                 <h4>専門分野</h4>
@@ -74,7 +74,7 @@ const profile = () => {
                         quality={100} priority={true} placeholder='blur'
                         src={profilePicture} width={300} height={300}
                         alt="久保天太朗のプロフィール画像"
-                        className='mx-auto aspect-square w-full max-w-[320px] rounded-xl object-cover md:mx-0 md:w-[300px] lg:w-[340px] lg:max-w-[340px]' />
+                        className='aspect-square w-full rounded-xl object-cover md:w-[300px] lg:w-[340px]' />
                 </div >
             </motion.section>
         </main >
