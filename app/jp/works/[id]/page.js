@@ -10,8 +10,8 @@ const ProjectDescription = () => {
                 <h1 className='mt-4 text-4xl font-bold leading-tight sm:text-5xl md:text-6xl'>
                     ただいま準備中です
                 </h1>
-                <p className='mt-6 text-base md:text-lg font-light leading-8'>
-                    プロジェクトの見せ方を見直しているため、個別のケーススタディは一時的に非公開にしています。より伝わりやすい形に整えているところなので、少しだけお待ちください。
+                <p className='mt-6 text-justify text-base font-light leading-8 md:text-lg'>
+                    作品ページの更新に伴い、このケーススタディは一時的に非公開です。
                 </p>
                 <Link
                     href='/jp/works'

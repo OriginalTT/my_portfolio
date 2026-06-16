@@ -16,7 +16,7 @@ const profile = () => {
                     {profileInfo.name}</h1>
                 <div className='mt-8 flex flex-col-reverse gap-8 md:flex-row md:items-start md:justify-between lg:gap-12'>
                     <div className='w-full md:max-w-[620px]'>
-                        <p className='text-base font-light leading-7'>{profileInfo.bio}</p>
+                        <p className='text-justify text-base font-light leading-7'>{profileInfo.bio}</p>
                         <div className='my-8 grid grid-cols-1 gap-5 sm:grid-cols-3'>
                             <div>
                                 <h4>専門分野</h4>
@@ -63,10 +63,9 @@ const profile = () => {
                                 className='flex items-center justify-center gap-1 py-3 px-5 
                             bg-transparent text-ink rounded-full w-full sm:w-fit box-border
                             hover:bg-accent hover:text-canvas border-ink hover:border-accent border-2'
-                                href='https://drive.google.com/file/d/1W1yM4qQQ34H6NpJm5j7Yg91f9hGNlvUI/view?usp=sharing'
-                                target='_blank'
+                                href='/jp/contact'
                             >
-                                <p>履歴書</p>
+                                <p>お問い合わせ</p>
                             </a>
                         </div>
                     </div>

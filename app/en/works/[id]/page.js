@@ -10,8 +10,8 @@ const ProjectDescription = () => {
                 <h1 className='mt-4 text-4xl font-bold leading-tight sm:text-5xl md:text-6xl'>
                     Temporarily unavailable
                 </h1>
-                <p className='mt-6 text-base md:text-lg font-light leading-8'>
-                    I am reworking how my projects are presented, so this individual case study is offline for the moment. Thanks for your patience while I make this section better.
+                <p className='mt-6 text-justify text-base font-light leading-8 md:text-lg'>
+                    This case study is temporarily offline while I refresh the project section.
                 </p>
                 <Link
                     href='/en/works'

@@ -10,11 +10,11 @@ const Works = () => {
                 <h1 className='mt-4 text-4xl font-bold leading-tight sm:text-5xl md:text-7xl'>
                     Renovation in progress
                 </h1>
-                <p className='mt-6 text-base md:text-lg font-light leading-8'>
-                    I am giving this section a proper refresh so it can better show how I think, prototype, and design interactions. The works page is taking a short break for now, but it will be back with a cleaner story soon.
+                <p className='mt-6 text-justify text-base font-light leading-8 md:text-lg'>
+                    I am refreshing this section to better show my process and projects.
                 </p>
-                <p className='mt-4 text-base font-light leading-7'>
-                    Thanks for stopping by while the paint is still drying.
+                <p className='mt-4 text-justify text-base font-light leading-7'>
+                    Thanks for your patience.
                 </p>
                 <div className='mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row'>
                     <Link
