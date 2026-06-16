@@ -1,10 +1,8 @@
 'use client';
 import { profileInfo } from './variables'
 import Image from 'next/image'
-import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { BsImageFill, BsFillPersonFill } from 'react-icons/bs';
-import profilePicture from '../../../public/portrait.webp';
+import profilePicture from '../../../public/portrait.jpg';
 
 const profile = () => {
     return (
@@ -52,13 +50,15 @@ const profile = () => {
                             </div>
                         </div>
                         <div className='mt-8 flex flex-col gap-3 sm:flex-row sm:items-center'>
-                            <Link href={'/jp/works'}
+                            <a
+                                href='https://www.linkedin.com/in/tentaro-kubo/'
+                                target='_blank'
+                                rel='noopener noreferrer'
                                 className='flex items-center justify-center gap-1 py-3 px-5 
                             bg-ink text-canvas rounded-full w-full sm:w-fit box-border
                             hover:bg-accent hover:text-canvas border-ink hover:border-accent border-2' >
-                                <BsImageFill />
-                                <p>作品一覧</p>
-                            </Link>
+                                <p>LinkedIn</p>
+                            </a>
                             <a
                                 className='flex items-center justify-center gap-1 py-3 px-5 
                             bg-transparent text-ink rounded-full w-full sm:w-fit box-border
@@ -66,7 +66,6 @@ const profile = () => {
                                 href='https://drive.google.com/file/d/1W1yM4qQQ34H6NpJm5j7Yg91f9hGNlvUI/view?usp=sharing'
                                 target='_blank'
                             >
-                                <BsFillPersonFill />
                                 <p>履歴書</p>
                             </a>
                         </div>
