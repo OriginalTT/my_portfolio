@@ -20,7 +20,7 @@ const profile = () => {
                         <p className='font-light text-md'>{profileInfo.bio}</p>
                         <div className='flex my-3 gap-5'>
                             <div>
-                                <h4>スキル</h4>
+                                <h4>専門分野</h4>
                                 <ul>
                                     {profileInfo.skills.map((skill, index) => (
                                         <li key={index}
@@ -30,12 +30,12 @@ const profile = () => {
                                 </ul>
                             </div>
                             <div>
-                                <h4>趣味</h4>
+                                <h4>興味・関心</h4>
                                 <ul>
-                                    {profileInfo.hobbies.map((hobby, index) => (
+                                    {profileInfo.interests.map((interest, index) => (
                                         <li key={index}
                                             className='font-light text-sm'
-                                        >{hobby}</li>
+                                        >{interest}</li>
                                     ))}
                                 </ul>
                             </div>

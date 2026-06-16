@@ -11,9 +11,8 @@ export const profileInfo = {
         '日本語',
         '英語',
     ],
-    hobbies: [
-        'ゲーム',
-        '音楽鑑賞',
-        '画像生成AI'
+    interests: [
+        'Agentic AI',
+        'ゲーム'
     ]
 }
