@@ -55,15 +55,15 @@ export default function Home() {
   return (
     <>
       <motion.header
-        className='m-3 z-50'
+        className='z-50 px-4 py-4 sm:px-6 lg:px-8'
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: 'easeOut' }}
         suppressHydrationWarning
       >
-        <div className='flex justify-between w-11/12 max-w-[1500px] mx-auto'>
-          <Link href={'/'} className='font-bold hover:text-hoverColor'>Tentaro Kubo</Link>
-          <nav className='flex gap-3 font-light items-center'>
+        <div className='mx-auto flex w-full max-w-6xl items-center justify-between gap-4'>
+          <Link href={'/'} className='shrink-0 font-bold hover:text-hoverColor'>Tentaro Kubo</Link>
+          <nav className='flex flex-wrap items-center justify-end gap-x-4 gap-y-2 text-sm font-light sm:text-base'>
             <Link href={`/en/profile`} className='hover:text-hoverColor hover:underline'>Profile</Link>
             <Link href={`/en/works`} className='hover:text-hoverColor hover:underline'>Works</Link>
             <Link href={`/en/contact`} className='hover:text-hoverColor hover:underline'>Contact</Link>
@@ -71,16 +71,15 @@ export default function Home() {
           </nav>
         </div>
       </motion.header>
-      <main className="h-96 w-fit mx-auto">
-        <div ref={options}>
+      <main className="mx-auto flex min-h-[calc(100vh-72px)] w-full max-w-6xl items-center px-6 py-16 sm:px-8">
+        <div ref={options} className="w-full">
           <motion.div
-            className="mt-[200px]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1, ease: 'easeInOut' }}>
             <h2
               onClick={handleEnIntro}
-              className="font-bold text-4xl md:text-9xl mx-10 hover:text-hoverColor hover:cursor-pointer" >
+              className="w-fit text-5xl font-bold leading-none hover:cursor-pointer hover:text-hoverColor sm:text-7xl lg:text-9xl" >
               Hello! <MdNavigateNext className="inline" /></h2>
           </motion.div>
           <motion.div
@@ -89,51 +88,51 @@ export default function Home() {
             transition={{ duration: 1, delay: 1, ease: 'easeInOut' }}>
             <h2
               onClick={handleJpIntro}
-              className='font-bold text-4xl md:text-9xl mx-10 hover:text-hoverColor hover:cursor-pointer'>
+              className='mt-3 w-fit text-5xl font-bold leading-none hover:cursor-pointer hover:text-hoverColor sm:text-7xl lg:text-9xl'>
               こんにちは! <MdNavigateNext className="inline" />
             </h2>
           </motion.div>
         </div>
         <div
           ref={enIntro}
-          className='fixed top-[200px] pointer-events-none'>
+          className='pointer-events-none fixed inset-x-6 top-1/2 -translate-y-1/2 sm:inset-x-8 lg:left-1/2 lg:right-auto lg:w-full lg:max-w-6xl lg:-translate-x-1/2'>
           <h1
             ref={enIntroFirst}
-            className='font-bold text-4xl md:text-9xl opacity-0 text-offwhite'
+            className='text-5xl font-bold leading-none text-offwhite opacity-0 sm:text-7xl lg:text-9xl'
           >
             A Designer?
           </h1>
           <h1
             ref={enIntroSecond}
-            className='font-bold text-4xl md:text-9xl opacity-0'
+            className='text-5xl font-bold leading-none opacity-0 sm:text-7xl lg:text-9xl'
           >
             Programmer?
           </h1>
           <h1
             ref={enIntroThird}
-            className='font-bold text-4xl md:text-9xl opacity-0'
+            className='text-5xl font-bold leading-none opacity-0 sm:text-7xl lg:text-9xl'
           >
             No no, Both!
           </h1>
         </div>
         <div
           ref={jpIntro}
-          className='fixed top-[200px] pointer-events-none'>
+          className='pointer-events-none fixed inset-x-6 top-1/2 -translate-y-1/2 sm:inset-x-8 lg:left-1/2 lg:right-auto lg:w-full lg:max-w-6xl lg:-translate-x-1/2'>
           <h1
             ref={jpIntroFirst}
-            className='font-bold text-4xl md:text-9xl opacity-0 text-offwhite'
+            className='text-5xl font-bold leading-none text-offwhite opacity-0 sm:text-7xl lg:text-9xl'
           >
             プログラム
           </h1>
           <h1
             ref={jpIntroSecond}
-            className='font-bold text-4xl md:text-9xl opacity-0'
+            className='text-5xl font-bold leading-none opacity-0 sm:text-7xl lg:text-9xl'
           >
             が書ける
           </h1>
           <h1
             ref={jpIntroThird}
-            className='font-bold text-4xl md:text-9xl opacity-0'
+            className='text-5xl font-bold leading-none opacity-0 sm:text-7xl lg:text-9xl'
           >
             デザイナー。
           </h1>

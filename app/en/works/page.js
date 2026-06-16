@@ -2,12 +2,12 @@ import Link from 'next/link';
 
 const Works = () => {
     return (
-        <main className='min-h-[70vh] flex items-center justify-center px-6 py-20 text-offblack'>
-            <section className='max-w-[680px] text-center'>
-                <p className='text-sm font-light uppercase tracking-[0.2em] text-hoverColor'>
+        <main className='mx-auto flex min-h-[70vh] w-full max-w-6xl items-center justify-center px-6 py-14 text-offblack sm:px-8 lg:py-24'>
+            <section className='w-full max-w-[680px] text-center'>
+                <p className='text-sm font-light uppercase text-hoverColor'>
                     Works
                 </p>
-                <h1 className='mt-4 text-4xl md:text-7xl font-bold'>
+                <h1 className='mt-4 text-4xl font-bold leading-tight sm:text-5xl md:text-7xl'>
                     Renovation in progress
                 </h1>
                 <p className='mt-6 text-base md:text-lg font-light leading-8'>
@@ -16,16 +16,16 @@ const Works = () => {
                 <p className='mt-4 text-base font-light leading-7'>
                     Thanks for stopping by while the paint is still drying.
                 </p>
-                <div className='mt-10 flex flex-col sm:flex-row items-center justify-center gap-4'>
+                <div className='mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row'>
                     <Link
                         href='/en/profile'
-                        className='bg-offwhite text-highlight rounded-full px-6 py-3 border-2 border-offwhite hover:bg-hoverColor hover:text-offwhite'
+                        className='w-full rounded-full border-2 border-offwhite bg-offwhite px-6 py-3 text-highlight hover:bg-hoverColor hover:text-offwhite sm:w-fit'
                     >
                         View Profile
                     </Link>
                     <Link
                         href='/en/contact'
-                        className='bg-highlight2 text-offwhite rounded-full px-6 py-3 border-2 border-offwhite hover:bg-hoverColor hover:text-offwhite'
+                        className='w-full rounded-full border-2 border-offwhite bg-highlight2 px-6 py-3 text-offwhite hover:bg-hoverColor hover:text-offwhite sm:w-fit'
                     >
                         Contact Me
                     </Link>

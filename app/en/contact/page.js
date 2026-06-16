@@ -27,9 +27,9 @@ const Contact = () => {
 
 
     return (
-        <main className='flex flex-col items-center'>
+        <main className='mx-auto flex min-h-[70vh] w-full max-w-6xl flex-col items-center px-6 py-14 sm:px-8 lg:py-24'>
             <motion.h1
-                className="font-bold text-5xl mt-10 md:text-9xl md:mt-[100px]"
+                className="text-center text-5xl font-bold leading-none sm:text-7xl lg:text-9xl"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, ease: 'easeOut' }}
@@ -38,37 +38,36 @@ const Contact = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, ease: 'easeOut', delay: 0.5 }}
-                className="p-10 w-11/12 md:w-[500px] rounded-xl flex flex-col items-center gap-5 mx-10 my-10
-                bg-highlight2"
+                className="mt-8 flex w-full max-w-[520px] flex-col gap-5 rounded-xl bg-highlight2 p-6 sm:p-8 md:p-10"
                 ref={form} onSubmit={sendEmail}>
                 <p className='ml-auto text-xs text-red-400'>* Required</p>
-                <div>
+                <div className='w-full'>
                     <label htmlFor="name">Name <span className='text-red-400'>*</span></label> <br />
                     <input
-                        className="bg-transparent p-2 border-offwhite border rounded-xl w-[250px] md:w-[400px]"
+                        className="w-full rounded-lg border border-offwhite bg-transparent p-3"
                         type="text" id="name" name="name" required
                         onChange={(e) => setName(e.target.value)} />
                 </div>
 
-                <div>
+                <div className='w-full'>
                     <label htmlFor="email">Email <span className='text-red-400'>*</span></label> <br />
                     <input
-                        className="bg-transparent p-2 border-offwhite border rounded-xl w-[250px] md:w-[400px] "
+                        className="w-full rounded-lg border border-offwhite bg-transparent p-3"
                         type="email" id="email" name="email" required
                         onChange={(e) => setEmail(e.target.value)} />
                 </div>
 
-                <div>
+                <div className='w-full'>
                     <label htmlFor="message">Message <span className='text-red-400'>*</span></label> <br />
                     <textarea
-                        className="bg-transparent p-2 border-offwhite border rounded-xl w-[250px] md:w-[400px] "
+                        className="min-h-[140px] w-full resize-y rounded-lg border border-offwhite bg-transparent p-3"
                         id="message" name="message" rows="4" required
                         onChange={(e) => setMessage(e.target.value)}></textarea>
                 </div>
 
-                <div>
+                <div className='flex w-full justify-end'>
                     <button type="submit" value={'Send'}
-                        className={`bg-offwhite text-highlight rounded-full px-5 py-3 drop-shadow-md md:ml-[300px]
+                        className={`min-w-[120px] rounded-full bg-offwhite px-5 py-3 text-highlight drop-shadow-md
                         box-border border-2 border-offwhite disabled:opacity-30 disabled:cursor-not-allowed
                         ${!areFieldsFilled() ? '' : 'hover:text-offwhite hover:bg-highlight'}`}
                         disabled={!areFieldsFilled()}

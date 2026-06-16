@@ -102,8 +102,7 @@ export const projects = [
         page: (
             <article className="flex flex-col gap-5">
                 <a href='https://www.estico.net/index.html' target='_blank'
-                    className='font-bold bg-offwhite text-highlight px-5 py-3 rounded-full 
-                    w-fit mx-auto hover:text-offwhite hover:bg-highlight2 border-offwhite border-2 box-border'
+                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-offwhite bg-offwhite px-5 py-3 text-center font-bold text-highlight hover:bg-highlight2 hover:text-offwhite sm:w-fit'
                 >ホームページはこちら
                     <BiLinkExternal className='inline-block' />
                 </a>
@@ -129,8 +128,7 @@ export const projects = [
                     quality={100} priority={true} placeholder='blur'
                     alt="デザインの解説" />
                 <a href='https://drive.google.com/file/d/1wKrAEC6mAOc9RtC8vTqzdPc0eX1Qh9oE/view?usp=sharing' target='_blank'
-                    className='font-bold bg-offwhite text-highlight px-5 py-3 rounded-full 
-                    w-fit mx-auto hover:text-offwhite hover:bg-highlight2 border-offwhite border-2 box-border'
+                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-offwhite bg-offwhite px-5 py-3 text-center font-bold text-highlight hover:bg-highlight2 hover:text-offwhite sm:w-fit'
                 >元ファイルはこちら
                     <BiLinkExternal className='inline-block' />
                 </a>
@@ -148,8 +146,7 @@ export const projects = [
         page: (
             <article className="flex flex-col gap-5">
                 <a href='https://github.com/OriginalTT/ball_tube' target='_blank'
-                    className='font-bold bg-offwhite text-highlight px-5 py-3 rounded-full 
-                    w-fit mx-auto hover:text-offwhite hover:bg-highlight2 border-offwhite border-2 box-border'
+                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-offwhite bg-offwhite px-5 py-3 text-center font-bold text-highlight hover:bg-highlight2 hover:text-offwhite sm:w-fit'
                 >GitHubはこちら
                     <BiLinkExternal className='inline-block' />
                 </a>
@@ -186,8 +183,7 @@ export const projects = [
         page: (
             <article className="flex flex-col gap-5">
                 <a href='https://github.com/OriginalTT/weather_app' target='_blank'
-                    className='font-bold bg-offwhite text-highlight px-5 py-3 rounded-full 
-                    w-fit mx-auto hover:text-offwhite hover:bg-highlight2 border-offwhite border-2 box-border'
+                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-offwhite bg-offwhite px-5 py-3 text-center font-bold text-highlight hover:bg-highlight2 hover:text-offwhite sm:w-fit'
                 >GitHubはこちら
                     <BiLinkExternal className='inline-block' />
                 </a>
@@ -209,8 +205,7 @@ export const projects = [
         page: (
             <article className="flex flex-col gap-5">
                 <a href='https://www.tiktok.com/@alto2go' target='_blank'
-                    className='font-bold bg-offwhite text-highlight px-5 py-3 rounded-full 
-                    w-fit mx-auto hover:text-offwhite hover:bg-highlight2 border-offwhite border-2 box-border'
+                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-offwhite bg-offwhite px-5 py-3 text-center font-bold text-highlight hover:bg-highlight2 hover:text-offwhite sm:w-fit'
                 >TikTokアカウントはこちら
                     <BiLinkExternal className='inline-block' />
                 </a>
@@ -241,8 +236,7 @@ export const projects = [
         page: (
             <article className="flex flex-col gap-5">
                 <a href='https://github.com/OriginalTT/champ_memo' target='_blank'
-                    className='font-bold bg-offwhite text-highlight px-5 py-3 rounded-full 
-                    w-fit mx-auto hover:text-offwhite hover:bg-highlight2 border-offwhite border-2 box-border'
+                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-offwhite bg-offwhite px-5 py-3 text-center font-bold text-highlight hover:bg-highlight2 hover:text-offwhite sm:w-fit'
                 >GitHubはこちら
                     <BiLinkExternal className='inline-block' />
                 </a>

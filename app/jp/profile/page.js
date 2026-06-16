@@ -8,17 +8,18 @@ import profilePicture from '../../../public/portrait.webp';
 
 const profile = () => {
     return (
-        <main className='w-fit mx-auto'>
+        <main className='mx-auto w-full max-w-6xl px-6 py-14 sm:px-8 lg:py-24'>
             <motion.section
+                className='w-full'
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, ease: 'easeInOut' }}>
-                <h1 className="font-bold text-4xl md:text-8xl mt-10 ml-5 md:mt-[100px] md:ml-0 z-50 drop-shadow-2xl">
+                <h1 className="text-5xl font-bold leading-none drop-shadow-2xl sm:text-6xl lg:text-8xl">
                     {profileInfo.name}</h1>
-                <div className='flex flex-col-reverse md:flex-row gap-5 mt-3 w-11/12 md:w-fit max-w-screen-lg mx-auto'>
-                    <div className='md:w-[400px]'>
-                        <p className='font-light text-md'>{profileInfo.bio}</p>
-                        <div className='flex my-3 gap-5'>
+                <div className='mt-8 flex flex-col-reverse gap-8 md:flex-row md:items-start md:justify-between lg:gap-12'>
+                    <div className='w-full md:max-w-[620px]'>
+                        <p className='text-base font-light leading-8'>{profileInfo.bio}</p>
+                        <div className='my-8 grid grid-cols-1 gap-5 sm:grid-cols-3'>
                             <div>
                                 <h4>専門分野</h4>
                                 <ul>
@@ -50,17 +51,17 @@ const profile = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className='flex mt-5 gap-5'>
+                        <div className='mt-8 flex flex-col gap-3 sm:flex-row sm:items-center'>
                             <Link href={'/jp/works'}
-                                className='flex items-center gap-1 py-3 px-5 
-                            bg-offwhite text-highlight rounded-full w-fit box-border
+                                className='flex items-center justify-center gap-1 py-3 px-5 
+                            bg-offwhite text-highlight rounded-full w-full sm:w-fit box-border
                             hover:bg-hoverColor hover:text-offwhite border-offwhite border-2' >
                                 <BsImageFill />
                                 <p>作品一覧</p>
                             </Link>
                             <a
-                                className='flex items-center gap-1 py-3 px-5 
-                            bg-highlight2 text-offwhite rounded-full w-fit box-border
+                                className='flex items-center justify-center gap-1 py-3 px-5 
+                            bg-highlight2 text-offwhite rounded-full w-full sm:w-fit box-border
                             hover:bg-hoverColor hover:text-offwhite border-offwhite border-2'
                                 href='https://drive.google.com/file/d/1W1yM4qQQ34H6NpJm5j7Yg91f9hGNlvUI/view?usp=sharing'
                                 target='_blank'
@@ -74,7 +75,7 @@ const profile = () => {
                         quality={100} priority={true} placeholder='blur'
                         src={profilePicture} width={300} height={300}
                         alt="久保天太朗のプロフィール画像"
-                        className='rounded-2xl w-[300px] h-[300px] mx-auto' />
+                        className='mx-auto aspect-square w-full max-w-[320px] rounded-xl object-cover md:mx-0 md:w-[300px] lg:w-[340px] lg:max-w-[340px]' />
                 </div >
             </motion.section>
         </main >

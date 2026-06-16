@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from "react";
 import Link from "next/link";
 import Image from 'next/image';
@@ -6,8 +8,9 @@ import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from 'react-ico
 import { AiFillInfoCircle } from 'react-icons/ai';
 
 const ProjectCard = (props) => {
-    const { project, index } = props;
+    const { project } = props;
     const [thumbnailId, setThumbnailId] = useState(0);
+    const hasMultipleThumbnails = project.thumbnail > 1;
 
     const handleThumbnailUpdate = (delta) => {
         setThumbnailId((prev) => {
@@ -21,59 +24,56 @@ const ProjectCard = (props) => {
     }
 
     return (
-        <div
-            className='flex justify-center align-center rounded-xl'>
-            <div className='flex items-center'>
-                {project.thumbnail === 1 ? <BsFillArrowLeftCircleFill
-                    className='mr-[-50px] z-40 text-3xl opacity-0' /> :
-                    <BsFillArrowLeftCircleFill
-                        className='mr-[-50px] z-40 text-3xl text-black
-                    bg-highlight rounded-full  border-highlight border-2
-                    hover:text-highlight hover:bg-offwhite hover:border-offwhite'
-                        onClick={() => handleThumbnailUpdate(-1)} />
-                }
+        <article className='mx-auto grid w-full max-w-5xl overflow-hidden rounded-xl bg-highlight2 md:grid-cols-[minmax(0,1.35fr)_minmax(260px,0.75fr)]'>
+            <div className='relative aspect-square w-full bg-highlight sm:aspect-[4/3] md:aspect-square'>
+                <Image
+                    fill
+                    sizes='(max-width: 768px) 100vw, 58vw'
+                    className='object-cover'
+                    src={`/projects/${project.id}/thumbnail_${thumbnailId}.JPG`}
+                    alt={`${project.title} thumbnail`} />
+                {hasMultipleThumbnails && (
+                    <>
+                        <button
+                            type='button'
+                            aria-label='Previous thumbnail'
+                            className='absolute left-4 top-1/2 z-10 -translate-y-1/2 rounded-full border-2 border-highlight bg-highlight text-3xl text-black hover:border-offwhite hover:bg-offwhite hover:text-highlight'
+                            onClick={() => handleThumbnailUpdate(-1)}
+                        >
+                            <BsFillArrowLeftCircleFill aria-hidden />
+                        </button>
+                        <button
+                            type='button'
+                            aria-label='Next thumbnail'
+                            className='absolute right-4 top-1/2 z-10 -translate-y-1/2 rounded-full border-2 border-highlight bg-highlight text-3xl text-offwhite hover:border-offwhite hover:bg-offwhite hover:text-highlight'
+                            onClick={() => handleThumbnailUpdate(1)}
+                        >
+                            <BsFillArrowRightCircleFill aria-hidden />
+                        </button>
+                    </>
+                )}
+            </div>
+            <div className='flex flex-col justify-center gap-4 p-6 sm:p-8'>
                 <div>
-                    <Image
-                        rel='preload'
-                        width={500} height={500}
-                        className='rounded-l-xl z-50 w-[500px] h-[500px] box-border'
-                        src={`/projects/${project.id}/thumbnail_${thumbnailId}.JPG`}
-                        style={{ objectFit: "cover" }}
-                        alt='Image' />
+                    <h3 className='text-xl font-bold'>{project.title}</h3>
+                    <div className='mt-3 flex flex-wrap gap-2'>
+                        {project.genre.map((genreId, index) => {
+                            const genre = filterOptions.find((option) => option.id === genreId);
+                            return (<p key={index}
+                                className={`${genre.color} rounded-md px-2 py-1 text-xs text-offwhite drop-shadow-sm`}>
+                                {genre.name}
+                            </p>)
+                        })}
+                    </div>
                 </div>
-                {project.thumbnail === 1 ?
-                    <BsFillArrowRightCircleFill
-                        className='ml-[-50px] z-40 text-3xl opacity-0' /> :
-                    <BsFillArrowRightCircleFill
-                        className='ml-[-50px] z-40 text-3xl text-offwhite
-                    bg-highlight rounded-full  border-highlight border-2
-                    hover:text-highlight hover:bg-offwhite hover:border-offwhite'
-                        onClick={() => handleThumbnailUpdate(1)} />
-                }
-            </div>
-            <div className='w-[250px] ml-10 mr-[-30px] mt-10 z-40'>
-                <h3 className='font-bold text-xl'>{project.title}</h3>
-                <div className='flex gap-2 px-1 my-3'>
-                    {project.genre.map((genreId, index) => {
-                        const genre = filterOptions.find((option) => option.id === genreId);
-                        return (<p key={index}
-                            className={`${genre.color} px-2 py-1 rounded-md drop-shadow-sm text-xs text-offwhite`}>
-                            {genre.name}
-                        </p>)
-                    })}
-                </div>
-                <p className='text-sm font-extralight my-5'>{project.description}</p>
+                <p className='text-sm font-extralight leading-6'>{project.description}</p>
                 <Link href={`/jp/works/${project.id}`}
-                    className='text-lg bg-offwhite px-3 py-1 rounded-full 
-                    text-highlight flex items-center w-fit gap-1
-                    hover:bg-highlight hover:text-offwhite border-offwhite
-                    border-2 box-border'
+                    className='flex w-full items-center justify-center gap-1 rounded-full border-2 border-offwhite bg-offwhite px-4 py-2 text-highlight hover:bg-highlight hover:text-offwhite sm:w-fit'
                 >
-                    <AiFillInfoCircle className='inline text-xl' />
-                    詳細はこちら</Link>
+                    <AiFillInfoCircle className='text-xl' />
+                    è©³ç´°ã¯ã“ã¡ã‚‰</Link>
             </div>
-            <div className='bg-highlight2 w-[500px] h-[500px] rounded-r-xl z-[-1] ml-[-450px]'></div>
-        </div>
+        </article>
     )
 }
 
