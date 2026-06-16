@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 
-const contact = () => {
+const Contact = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -33,7 +33,7 @@ const contact = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, ease: 'easeOut' }}
-            >\I'm Here!/</motion.h1>
+            >\I&apos;m Here!/</motion.h1>
             <motion.form
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -79,4 +79,4 @@ const contact = () => {
     )
 }
 
-export default contact
+export default Contact

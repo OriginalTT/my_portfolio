@@ -6,7 +6,7 @@ import { BsFillArrowUpCircleFill } from 'react-icons/bs';
 import ProjectCard from './components';
 import { motion } from 'framer-motion';
 
-const works = () => {
+const Works = () => {
     const [filter, setFilter] = useState([]);
     const [projectList, setProjectList] = useState(projects);
 
@@ -76,11 +76,11 @@ const works = () => {
                 {projectList.map((project, index) => {
                     return (
                         <motion.div
+                            key={project.id}
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 1, delay: 0.5, ease: 'easeOut' }}>
                             <ProjectCard
-                                key={index}
                                 index={index}
                                 project={project} />
                         </ motion.div >
@@ -93,4 +93,4 @@ const works = () => {
     )
 }
 
-export default works
+export default Works

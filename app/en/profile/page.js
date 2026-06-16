@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 import { motion } from 'framer-motion'
 import { BsImageFill, BsFillPersonFill } from 'react-icons/bs';
-import profilePicture from '/public/portrait.webp';
+import profilePicture from '../../../public/portrait.webp';
 
 const profile = () => {
     return (

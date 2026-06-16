@@ -1,7 +1,7 @@
 import { BiLinkExternal } from 'react-icons/bi';
 import Image from 'next/image';
-import watamiImage from '/public/projects/0/redesign_en.webp';
-import foodlyImage from '/public/projects/1/design_en.webp';
+import watamiImage from '../../../public/projects/0/redesign_en.webp';
+import foodlyImage from '../../../public/projects/1/design_en.webp';
 
 export const filterOptions = [
     { id: 0, name: "UX", color: 'bg-cyan-200' },
@@ -32,7 +32,7 @@ export const projects = [
 
                 <div className="pt-3">
                     <h3 className="text-xl my-1">Analysis</h3>
-                    <p className="font-light my-1">I analyzed the original company website from a UX perspective and summarized the analysis results in a video. The analasys was done using frameworks such as Jakob's 10 Usability Heuristics, focusing on whether the design is user-centered. The video is produced in a way that simulates actual interaction with a client, where I explain all flaws and problems with logical reasonings within the small timeframe.</p>
+                    <p className="font-light my-1">I analyzed the original company website from a UX perspective and summarized the analysis results in a video. The analasys was done using frameworks such as Jakob&apos;s 10 Usability Heuristics, focusing on whether the design is user-centered. The video is produced in a way that simulates actual interaction with a client, where I explain all flaws and problems with logical reasonings within the small timeframe.</p>
                     <iframe width="700" height="450" src="https://www.youtube.com/embed/n2YSkE3zRnA?si=FOtMDo_XevhvRsus" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
                         className="mt-5 mx-auto w-full rounded-xl"
                     ></iframe>
@@ -277,9 +277,9 @@ export const projects = [
                 <div className="pt-3">
                     <h3 className="text-xl my-1">Creating Personas</h3>
                     <p className="font-light my-1">Based on the research, the following personas were created:</p>
-                    <Image src={'/projects/7/thumbnail_0.JPG'} width={750} height={700} />
-                    <Image src={'/projects/7/thumbnail_1.JPG'} width={750} height={700} />
-                    <Image src={'/projects/7/thumbnail_2.JPG'} width={750} height={700} />
+                    <Image src={'/projects/7/thumbnail_0.JPG'} width={750} height={700} alt="Persona research board 1" />
+                    <Image src={'/projects/7/thumbnail_1.JPG'} width={750} height={700} alt="Persona research board 2" />
+                    <Image src={'/projects/7/thumbnail_2.JPG'} width={750} height={700} alt="Persona research board 3" />
                 </div>
             </article>
         )

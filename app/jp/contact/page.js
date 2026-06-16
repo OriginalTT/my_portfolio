@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 
-const contact = () => {
+const Contact = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -79,4 +79,4 @@ const contact = () => {
     )
 }
 
-export default contact
+export default Contact

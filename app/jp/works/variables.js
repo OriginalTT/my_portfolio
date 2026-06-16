@@ -1,7 +1,7 @@
 import { BiLinkExternal } from 'react-icons/bi';
 import Image from 'next/image';
-import watamiImage from '/public/projects/0/redesign_jp.webp';
-import foodlyImage from '/public/projects/1/design_jp.webp';
+import watamiImage from '../../../public/projects/0/redesign_jp.webp';
+import foodlyImage from '../../../public/projects/1/design_jp.webp';
 
 export const filterOptions = [
     { id: 0, name: "UX", color: 'bg-cyan-200' },
@@ -277,9 +277,9 @@ export const projects = [
                 <div className="pt-3">
                     <h3 className="text-xl my-1">ペルソナ制作</h3>
                     <p className="font-light my-1">前述したリサーチの結果をもとに以下のペルソナを制作しました。</p>
-                    <Image src={'/projects/7/thumbnail_0.JPG'} width={750} height={700} />
-                    <Image src={'/projects/7/thumbnail_1.JPG'} width={750} height={700} />
-                    <Image src={'/projects/7/thumbnail_2.JPG'} width={750} height={700} />
+                    <Image src={'/projects/7/thumbnail_0.JPG'} width={750} height={700} alt="Persona research board 1" />
+                    <Image src={'/projects/7/thumbnail_1.JPG'} width={750} height={700} alt="Persona research board 2" />
+                    <Image src={'/projects/7/thumbnail_2.JPG'} width={750} height={700} alt="Persona research board 3" />
                 </div>
             </article>
         )
