@@ -4,10 +4,10 @@ import watamiImage from '../../../public/projects/0/redesign_jp.webp';
 import foodlyImage from '../../../public/projects/1/design_jp.webp';
 
 export const filterOptions = [
-    { id: 0, name: "UX", color: 'bg-cyan-200' },
-    { id: 1, name: "フロントエンド開発", color: 'bg-green-200' },
-    { id: 2, name: "映像制作", color: 'bg-orange-200' },
-    { id: 3, name: "SNS", color: 'bg-purple-200' },
+    { id: 0, name: "UX", color: 'bg-cyan-100' },
+    { id: 1, name: "フロントエンド開発", color: 'bg-emerald-100' },
+    { id: 2, name: "映像制作", color: 'bg-amber-100' },
+    { id: 3, name: "SNS", color: 'bg-violet-100' },
 ];
 
 export const projects = [
@@ -75,7 +75,7 @@ export const projects = [
                 <div className="mt-3">
                     <h3 className="text-xl my-1">リデザイン</h3>
                     <p className="font-light my-1">分析結果をもとに、WEB サイトをリデザインし、Adobe XDを使いHigh-Fidelity Prototypeを作成しました。制作したプロトタイプから一部抜粋し、以下に要点を記載しておりますが、<a href='https://drive.google.com/file/d/1xuUbtdSGxsvGE1K3L1_l4rKZQ3I9vlhn/view?usp=sharing' target="_blank"
-                        className="underline font-bold hover:text-hoverColor inline-block"
+                        className="underline font-bold hover:text-accent inline-block"
                     >こちら
                         <BiLinkExternal className='inline-block' />
                     </a>から元のファイルもご覧いただけます。</p>
@@ -102,7 +102,7 @@ export const projects = [
         page: (
             <article className="flex flex-col gap-5">
                 <a href='https://www.estico.net/index.html' target='_blank'
-                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-offwhite bg-offwhite px-5 py-3 text-center font-bold text-highlight hover:bg-highlight2 hover:text-offwhite sm:w-fit'
+                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-ink bg-ink px-5 py-3 text-center font-bold text-canvas hover:border-accent hover:bg-accent hover:text-canvas sm:w-fit'
                 >ホームページはこちら
                     <BiLinkExternal className='inline-block' />
                 </a>
@@ -128,7 +128,7 @@ export const projects = [
                     quality={100} priority={true} placeholder='blur'
                     alt="デザインの解説" />
                 <a href='https://drive.google.com/file/d/1wKrAEC6mAOc9RtC8vTqzdPc0eX1Qh9oE/view?usp=sharing' target='_blank'
-                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-offwhite bg-offwhite px-5 py-3 text-center font-bold text-highlight hover:bg-highlight2 hover:text-offwhite sm:w-fit'
+                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-ink bg-ink px-5 py-3 text-center font-bold text-canvas hover:border-accent hover:bg-accent hover:text-canvas sm:w-fit'
                 >元ファイルはこちら
                     <BiLinkExternal className='inline-block' />
                 </a>
@@ -146,7 +146,7 @@ export const projects = [
         page: (
             <article className="flex flex-col gap-5">
                 <a href='https://github.com/OriginalTT/ball_tube' target='_blank'
-                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-offwhite bg-offwhite px-5 py-3 text-center font-bold text-highlight hover:bg-highlight2 hover:text-offwhite sm:w-fit'
+                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-ink bg-ink px-5 py-3 text-center font-bold text-canvas hover:border-accent hover:bg-accent hover:text-canvas sm:w-fit'
                 >GitHubはこちら
                     <BiLinkExternal className='inline-block' />
                 </a>
@@ -183,7 +183,7 @@ export const projects = [
         page: (
             <article className="flex flex-col gap-5">
                 <a href='https://github.com/OriginalTT/weather_app' target='_blank'
-                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-offwhite bg-offwhite px-5 py-3 text-center font-bold text-highlight hover:bg-highlight2 hover:text-offwhite sm:w-fit'
+                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-ink bg-ink px-5 py-3 text-center font-bold text-canvas hover:border-accent hover:bg-accent hover:text-canvas sm:w-fit'
                 >GitHubはこちら
                     <BiLinkExternal className='inline-block' />
                 </a>
@@ -205,7 +205,7 @@ export const projects = [
         page: (
             <article className="flex flex-col gap-5">
                 <a href='https://www.tiktok.com/@alto2go' target='_blank'
-                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-offwhite bg-offwhite px-5 py-3 text-center font-bold text-highlight hover:bg-highlight2 hover:text-offwhite sm:w-fit'
+                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-ink bg-ink px-5 py-3 text-center font-bold text-canvas hover:border-accent hover:bg-accent hover:text-canvas sm:w-fit'
                 >TikTokアカウントはこちら
                     <BiLinkExternal className='inline-block' />
                 </a>
@@ -236,7 +236,7 @@ export const projects = [
         page: (
             <article className="flex flex-col gap-5">
                 <a href='https://github.com/OriginalTT/champ_memo' target='_blank'
-                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-offwhite bg-offwhite px-5 py-3 text-center font-bold text-highlight hover:bg-highlight2 hover:text-offwhite sm:w-fit'
+                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-ink bg-ink px-5 py-3 text-center font-bold text-canvas hover:border-accent hover:bg-accent hover:text-canvas sm:w-fit'
                 >GitHubはこちら
                     <BiLinkExternal className='inline-block' />
                 </a>

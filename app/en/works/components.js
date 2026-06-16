@@ -24,8 +24,8 @@ const ProjectCard = (props) => {
     }
 
     return (
-        <article className='mx-auto grid w-full max-w-5xl overflow-hidden rounded-xl bg-highlight2 md:grid-cols-[minmax(0,1.35fr)_minmax(260px,0.75fr)]'>
-            <div className='relative aspect-square w-full bg-highlight sm:aspect-[4/3] md:aspect-square'>
+        <article className='mx-auto grid w-full max-w-5xl overflow-hidden rounded-xl bg-surface md:grid-cols-[minmax(0,1.35fr)_minmax(260px,0.75fr)]'>
+            <div className='relative aspect-square w-full bg-canvas sm:aspect-[4/3] md:aspect-square'>
                 <Image
                     fill
                     sizes='(max-width: 768px) 100vw, 58vw'
@@ -37,7 +37,7 @@ const ProjectCard = (props) => {
                         <button
                             type='button'
                             aria-label='Previous thumbnail'
-                            className='absolute left-4 top-1/2 z-10 -translate-y-1/2 rounded-full border-2 border-highlight bg-highlight text-3xl text-black hover:border-offwhite hover:bg-offwhite hover:text-highlight'
+                            className='absolute left-4 top-1/2 z-10 -translate-y-1/2 rounded-full border-2 border-canvas bg-canvas text-3xl text-ink hover:border-accent hover:bg-accent hover:text-canvas'
                             onClick={() => handleThumbnailUpdate(-1)}
                         >
                             <BsFillArrowLeftCircleFill aria-hidden />
@@ -45,7 +45,7 @@ const ProjectCard = (props) => {
                         <button
                             type='button'
                             aria-label='Next thumbnail'
-                            className='absolute right-4 top-1/2 z-10 -translate-y-1/2 rounded-full border-2 border-highlight bg-highlight text-3xl text-offwhite hover:border-offwhite hover:bg-offwhite hover:text-highlight'
+                            className='absolute right-4 top-1/2 z-10 -translate-y-1/2 rounded-full border-2 border-canvas bg-canvas text-3xl text-ink hover:border-accent hover:bg-accent hover:text-canvas'
                             onClick={() => handleThumbnailUpdate(1)}
                         >
                             <BsFillArrowRightCircleFill aria-hidden />
@@ -60,7 +60,7 @@ const ProjectCard = (props) => {
                         {project.genre.map((genreId, index) => {
                             const genre = filterOptions.find((option) => option.id === genreId);
                             return (<p key={index}
-                                className={`${genre.color} rounded-md px-2 py-1 text-xs text-offwhite drop-shadow-sm`}>
+                                className={`${genre.color} rounded-md px-2 py-1 text-xs text-ink`}>
                                 {genre.name}
                             </p>)
                         })}
@@ -68,7 +68,7 @@ const ProjectCard = (props) => {
                 </div>
                 <p className='text-sm font-extralight leading-6'>{project.description}</p>
                 <Link href={`/en/works/${project.id}`}
-                    className='flex w-full items-center justify-center gap-1 rounded-full border-2 border-offwhite bg-offwhite px-4 py-2 text-highlight hover:bg-highlight hover:text-offwhite sm:w-fit'
+                    className='flex w-full items-center justify-center gap-1 rounded-full border-2 border-ink bg-ink px-4 py-2 text-canvas hover:border-accent hover:bg-accent hover:text-canvas sm:w-fit'
                 >
                     <AiFillInfoCircle className='text-xl' />
                     Learn More</Link>

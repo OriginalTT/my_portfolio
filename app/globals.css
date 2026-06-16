@@ -5,9 +5,15 @@
   color-scheme: light;
   --foreground-rgb: 12, 12, 12;
   --background-rgb: 224, 224, 216;
+  --accent-rgb: 59, 94, 86;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
+}
+
+::selection {
+  color: rgb(var(--background-rgb));
+  background: rgb(var(--accent-rgb));
 }

@@ -62,12 +62,12 @@ export default function Home() {
         suppressHydrationWarning
       >
         <div className='mx-auto flex w-full max-w-6xl items-center justify-between gap-4'>
-          <Link href={'/'} className='shrink-0 font-bold hover:text-hoverColor'>Tentaro Kubo</Link>
+          <Link href={'/'} className='shrink-0 font-bold hover:text-accent'>Tentaro Kubo</Link>
           <nav className='flex flex-wrap items-center justify-end gap-x-4 gap-y-2 text-sm font-light sm:text-base'>
-            <Link href={`/en/profile`} className='hover:text-hoverColor hover:underline'>Profile</Link>
-            <Link href={`/en/works`} className='hover:text-hoverColor hover:underline'>Works</Link>
-            <Link href={`/en/contact`} className='hover:text-hoverColor hover:underline'>Contact</Link>
-            <Link href={'/'} className='hover:text-hoverColor hover:underline'><BsTranslate /></Link>
+            <Link href={`/en/profile`} className='hover:text-accent hover:underline'>Profile</Link>
+            <Link href={`/en/works`} className='hover:text-accent hover:underline'>Works</Link>
+            <Link href={`/en/contact`} className='hover:text-accent hover:underline'>Contact</Link>
+            <Link href={'/'} className='hover:text-accent hover:underline'><BsTranslate /></Link>
           </nav>
         </div>
       </motion.header>
@@ -79,7 +79,7 @@ export default function Home() {
             transition={{ duration: 1, delay: 1, ease: 'easeInOut' }}>
             <h2
               onClick={handleEnIntro}
-              className="w-fit text-5xl font-bold leading-none hover:cursor-pointer hover:text-hoverColor sm:text-7xl lg:text-9xl" >
+              className="w-fit text-5xl font-bold leading-none hover:cursor-pointer hover:text-accent sm:text-7xl lg:text-9xl" >
               Hello! <MdNavigateNext className="inline" /></h2>
           </motion.div>
           <motion.div
@@ -88,7 +88,7 @@ export default function Home() {
             transition={{ duration: 1, delay: 1, ease: 'easeInOut' }}>
             <h2
               onClick={handleJpIntro}
-              className='mt-3 w-fit text-5xl font-bold leading-none hover:cursor-pointer hover:text-hoverColor sm:text-7xl lg:text-9xl'>
+              className='mt-3 w-fit text-5xl font-bold leading-none hover:cursor-pointer hover:text-accent sm:text-7xl lg:text-9xl'>
               こんにちは! <MdNavigateNext className="inline" />
             </h2>
           </motion.div>
@@ -98,7 +98,7 @@ export default function Home() {
           className='pointer-events-none fixed inset-x-6 top-1/2 -translate-y-1/2 sm:inset-x-8 lg:left-1/2 lg:right-auto lg:w-full lg:max-w-6xl lg:-translate-x-1/2'>
           <h1
             ref={enIntroFirst}
-            className='text-5xl font-bold leading-none text-offwhite opacity-0 sm:text-7xl lg:text-9xl'
+            className='text-5xl font-bold leading-none text-ink opacity-0 sm:text-7xl lg:text-9xl'
           >
             A Designer?
           </h1>
@@ -120,7 +120,7 @@ export default function Home() {
           className='pointer-events-none fixed inset-x-6 top-1/2 -translate-y-1/2 sm:inset-x-8 lg:left-1/2 lg:right-auto lg:w-full lg:max-w-6xl lg:-translate-x-1/2'>
           <h1
             ref={jpIntroFirst}
-            className='text-5xl font-bold leading-none text-offwhite opacity-0 sm:text-7xl lg:text-9xl'
+            className='text-5xl font-bold leading-none text-ink opacity-0 sm:text-7xl lg:text-9xl'
           >
             プログラム
           </h1>

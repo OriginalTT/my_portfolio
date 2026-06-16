@@ -38,13 +38,13 @@ const Contact = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, ease: 'easeOut', delay: 0.5 }}
-                className="mt-8 flex w-full max-w-[520px] flex-col gap-5 rounded-xl bg-highlight2 p-6 sm:p-8 md:p-10"
+                className="mt-8 flex w-full max-w-[520px] flex-col gap-5 rounded-xl bg-surface p-6 sm:p-8 md:p-10"
                 ref={form} onSubmit={sendEmail}>
                 <p className='ml-auto text-xs text-red-400'>* 必須項目</p>
                 <div className='w-full'>
                     <label htmlFor="name">お名前 <span className='text-red-400'>*</span></label> <br />
                     <input
-                        className="w-full rounded-lg border border-offwhite bg-transparent p-3"
+                        className="w-full rounded-lg border border-ink bg-transparent p-3 outline-none focus:border-accent focus:ring-2 focus:ring-accent/30"
                         type="text" id="name" name="name" required
                         onChange={(e) => setName(e.target.value)} />
                 </div>
@@ -52,7 +52,7 @@ const Contact = () => {
                 <div className='w-full'>
                     <label htmlFor="email">メールアドレス <span className='text-red-400'>*</span></label> <br />
                     <input
-                        className="w-full rounded-lg border border-offwhite bg-transparent p-3"
+                        className="w-full rounded-lg border border-ink bg-transparent p-3 outline-none focus:border-accent focus:ring-2 focus:ring-accent/30"
                         type="email" id="email" name="email" required
                         onChange={(e) => setEmail(e.target.value)} />
                 </div>
@@ -60,16 +60,16 @@ const Contact = () => {
                 <div className='w-full'>
                     <label htmlFor="message">メッセージ <span className='text-red-400'>*</span></label> <br />
                     <textarea
-                        className="min-h-[140px] w-full resize-y rounded-lg border border-offwhite bg-transparent p-3"
+                        className="min-h-[140px] w-full resize-y rounded-lg border border-ink bg-transparent p-3 outline-none focus:border-accent focus:ring-2 focus:ring-accent/30"
                         id="message" name="message" rows="4" required
                         onChange={(e) => setMessage(e.target.value)}></textarea>
                 </div>
 
                 <div className='flex w-full justify-end'>
                     <button type="submit" value={'Send'}
-                        className={`min-w-[120px] rounded-full bg-offwhite px-5 py-3 text-highlight drop-shadow-md
-                        box-border border-2 border-offwhite disabled:opacity-30 disabled:cursor-not-allowed
-                        ${!areFieldsFilled() ? '' : 'hover:text-offwhite hover:bg-highlight'}`}
+                        className={`min-w-[120px] rounded-full bg-ink px-5 py-3 text-canvas drop-shadow-md
+                        box-border border-2 border-ink disabled:opacity-30 disabled:cursor-not-allowed
+                        ${!areFieldsFilled() ? '' : 'hover:text-canvas hover:bg-accent hover:border-accent'}`}
                         disabled={!areFieldsFilled()}
                     >送信</button>
                 </div>

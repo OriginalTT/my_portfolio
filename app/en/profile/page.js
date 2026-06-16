@@ -54,15 +54,15 @@ const profile = () => {
                         <div className='mt-8 flex flex-col gap-3 sm:flex-row sm:items-center'>
                             <Link href={'/en/works'}
                                 className='flex items-center justify-center gap-1 py-3 px-5 
-                            bg-offwhite text-highlight rounded-full w-full sm:w-fit box-border
-                            hover:bg-hoverColor hover:text-offwhite border-offwhite border-2' >
+                            bg-ink text-canvas rounded-full w-full sm:w-fit box-border
+                            hover:bg-accent hover:text-canvas border-ink hover:border-accent border-2' >
                                 <BsImageFill />
                                 <p>Works</p>
                             </Link>
                             <a
                                 className='flex items-center justify-center gap-1 py-3 px-5 
-                            bg-highlight2 text-offwhite rounded-full w-full sm:w-fit box-border
-                            hover:bg-hoverColor hover:text-offwhite border-offwhite border-2'
+                            bg-transparent text-ink rounded-full w-full sm:w-fit box-border
+                            hover:bg-accent hover:text-canvas border-ink hover:border-accent border-2'
                                 href='https://drive.google.com/file/d/17qMUBxfsWDEhkHzoXmK4hv2NqcOpnyk0/view?usp=sharing'
                                 target='_blank'
                             >

@@ -11,11 +11,17 @@ module.exports = {
         sans: ['var(--font-noto-sans-jp)'],
       },
       colors: {
-        'highlight': '#E0E0D8',
-        'highlight2': '#EDE8D5',
-        'offwhite': '#0C0C0C',
-        'offblack': '#0C0C0C',
-        'hoverColor': '#B3AFA1'
+        canvas: '#E0E0D8',
+        surface: '#D7D7CF',
+        'surface-strong': '#C9C8BF',
+        ink: '#0C0C0C',
+        muted: '#6F6B61',
+        accent: '#3B5E56',
+        highlight: '#E0E0D8',
+        highlight2: '#D7D7CF',
+        offwhite: '#0C0C0C',
+        offblack: '#0C0C0C',
+        hoverColor: '#3B5E56'
       }
     },
   },

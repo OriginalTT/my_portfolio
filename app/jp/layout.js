@@ -16,12 +16,12 @@ export default function RootLayout({ children }) {
         suppressHydrationWarning
       >
         <div className='mx-auto flex w-full max-w-6xl items-center justify-between gap-4'>
-          <Link href={'/'} className='shrink-0 font-bold hover:text-hoverColor'>Tentaro Kubo</Link>
+          <Link href={'/'} className='shrink-0 font-bold hover:text-accent'>Tentaro Kubo</Link>
           <nav className='flex flex-wrap items-center justify-end gap-x-4 gap-y-2 text-sm font-light sm:text-base'>
-            <Link href={`/jp/profile`} className='hover:text-hoverColor hover:underline'>プロフィール</Link>
-            <Link href={`/jp/works`} className='hover:text-hoverColor hover:underline'>作品</Link>
-            <Link href={`/jp/contact`} className='hover:text-hoverColor hover:underline'>連絡先</Link>
-            <Link href={'/'} className='hover:text-hoverColor hover:underline'><BsTranslate /></Link>
+            <Link href={`/jp/profile`} className='hover:text-accent hover:underline'>プロフィール</Link>
+            <Link href={`/jp/works`} className='hover:text-accent hover:underline'>作品</Link>
+            <Link href={`/jp/contact`} className='hover:text-accent hover:underline'>連絡先</Link>
+            <Link href={'/'} className='hover:text-accent hover:underline'><BsTranslate /></Link>
           </nav>
         </div>
       </motion.header>
@@ -33,14 +33,14 @@ export default function RootLayout({ children }) {
         >
           <div className='mt-16 flex items-center justify-center gap-4 px-4 pb-10 pt-6 text-3xl'>
             <Link href={`/jp/contact`} >
-              <HiMail className='text-5xl hover:text-hoverColor' />
+              <HiMail className='text-5xl hover:text-accent' />
             </Link>
             <a target='_blank'
               href={'https://www.linkedin.com/in/tentaro-kubo/'}
-              className='hover:text-hoverColor'><BsLinkedin /></a>
+              className='hover:text-accent'><BsLinkedin /></a>
             <a target='_blank'
               href={'https://github.com/OriginalTT'}
-              className='hover:text-hoverColor'><BsGithub /></a>
+              className='hover:text-accent'><BsGithub /></a>
           </div>
         </motion.footer>
     </>

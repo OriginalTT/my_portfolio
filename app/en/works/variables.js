@@ -4,10 +4,10 @@ import watamiImage from '../../../public/projects/0/redesign_en.webp';
 import foodlyImage from '../../../public/projects/1/design_en.webp';
 
 export const filterOptions = [
-    { id: 0, name: "UX", color: 'bg-cyan-200' },
-    { id: 1, name: "Front-End Dev.", color: 'bg-green-200' },
-    { id: 2, name: "Videography", color: 'bg-orange-200' },
-    { id: 3, name: "Social Media", color: 'bg-purple-200' },
+    { id: 0, name: "UX", color: 'bg-cyan-100' },
+    { id: 1, name: "Front-End Dev.", color: 'bg-emerald-100' },
+    { id: 2, name: "Videography", color: 'bg-amber-100' },
+    { id: 3, name: "Social Media", color: 'bg-violet-100' },
 ];
 
 export const projects = [
@@ -75,7 +75,7 @@ export const projects = [
                 <div className="pt-3">
                     <h3 className="text-xl my-1">Redesign</h3>
                     <p className="font-light my-1">Based on the analysis, we redesigned the website and created a High-Fidelity Prototype using Adobe XD. Some excerpts from the prototype are listed below, but you can also view the original file from <a href='https://drive.google.com/file/d/1bs0umhorDjJpGd-R0DCK7-6tB_S-ZRk9/view?usp=sharing' target="_blank"
-                        className="underline font-bold hover:text-hoverColor inline-block"
+                        className="underline font-bold hover:text-accent inline-block"
                     >here
                         <BiLinkExternal className='inline-block' />
                     </a>.</p>
@@ -102,7 +102,7 @@ export const projects = [
         page: (
             <article className="flex flex-col gap-5">
                 <a href='https://www.estico.net/index.html' target='_blank'
-                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-offwhite bg-offwhite px-5 py-3 text-center font-bold text-highlight hover:bg-highlight2 hover:text-offwhite sm:w-fit'
+                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-ink bg-ink px-5 py-3 text-center font-bold text-canvas hover:border-accent hover:bg-accent hover:text-canvas sm:w-fit'
                 >Visit the website
                     <BiLinkExternal className='inline-block' />
                 </a>
@@ -128,7 +128,7 @@ export const projects = [
                     quality={100} priority={true} placeholder='blur'
                     alt="Explanation of the design" />
                 <a href='https://drive.google.com/file/d/15RswYj7NskPutRm6c6w8tMc5mAnsiA-O/view?usp=sharing' target='_blank'
-                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-offwhite bg-offwhite px-5 py-3 text-center font-bold text-highlight hover:bg-highlight2 hover:text-offwhite sm:w-fit'
+                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-ink bg-ink px-5 py-3 text-center font-bold text-canvas hover:border-accent hover:bg-accent hover:text-canvas sm:w-fit'
                 >See the original file here
                     <BiLinkExternal className='inline-block' />
                 </a>
@@ -146,7 +146,7 @@ export const projects = [
         page: (
             <article className="flex flex-col gap-5">
                 <a href='https://github.com/OriginalTT/ball_tube' target='_blank'
-                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-offwhite bg-offwhite px-5 py-3 text-center font-bold text-highlight hover:bg-highlight2 hover:text-offwhite sm:w-fit'
+                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-ink bg-ink px-5 py-3 text-center font-bold text-canvas hover:border-accent hover:bg-accent hover:text-canvas sm:w-fit'
                 >Check out GitHub here
                     <BiLinkExternal className='inline-block' />
                 </a>
@@ -183,7 +183,7 @@ export const projects = [
         page: (
             <article className="flex flex-col gap-5">
                 <a href='https://github.com/OriginalTT/weather_app' target='_blank'
-                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-offwhite bg-offwhite px-5 py-3 text-center font-bold text-highlight hover:bg-highlight2 hover:text-offwhite sm:w-fit'
+                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-ink bg-ink px-5 py-3 text-center font-bold text-canvas hover:border-accent hover:bg-accent hover:text-canvas sm:w-fit'
                 >Check out GitHub here
                     <BiLinkExternal className='inline-block' />
                 </a>
@@ -205,7 +205,7 @@ export const projects = [
         page: (
             <article className="flex flex-col gap-5">
                 <a href='https://www.tiktok.com/@alto2go' target='_blank'
-                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-offwhite bg-offwhite px-5 py-3 text-center font-bold text-highlight hover:bg-highlight2 hover:text-offwhite sm:w-fit'
+                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-ink bg-ink px-5 py-3 text-center font-bold text-canvas hover:border-accent hover:bg-accent hover:text-canvas sm:w-fit'
                 >Check out the TikTok account here
                     <BiLinkExternal className='inline-block' />
                 </a>
@@ -236,7 +236,7 @@ export const projects = [
         page: (
             <article className="flex flex-col gap-5">
                 <a href='https://github.com/OriginalTT/champ_memo' target='_blank'
-                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-offwhite bg-offwhite px-5 py-3 text-center font-bold text-highlight hover:bg-highlight2 hover:text-offwhite sm:w-fit'
+                    className='mx-auto inline-flex w-full items-center justify-center rounded-full border-2 border-ink bg-ink px-5 py-3 text-center font-bold text-canvas hover:border-accent hover:bg-accent hover:text-canvas sm:w-fit'
                 >Check out GitHub here
                     <BiLinkExternal className='inline-block' />
                 </a>
